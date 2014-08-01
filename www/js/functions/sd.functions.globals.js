@@ -175,6 +175,20 @@ Networking functions
 		});
 
 		//add click to hide overlay button on click
-		$('overlay .icon-cancel-circled').click(TP.spinner.hideme);
+		$('overlay .icon-cancel-circled').click(TP.UI.spinner.hideme);
+
+
+		//create defaults for all ajax calls within sp
+		$( document ).ajaxStart(function() {
+			TP.UI.spinner.showme('Loading...');
+		});
+
+		$( document ).ajaxComplete(function( event,request, settings ) {
+			TP.UI.spinner.hideme();
+		});
+		$( document ).ajaxError(function( event, request, settings ) {
+			TP.UI.spinner.hideme();
+			TP.UI.message.showMessage('An error occured, sorry', 'bad', 1000);
+		});
 	};
 });

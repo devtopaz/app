@@ -26,21 +26,19 @@ define([
 					type: 'POST',
 					dataType: "json",
 					data: {
-						'uname': values.uname,
+						'email': values.email,
 						'pword': values.pword
 					},
 					error: function(data){
 						if(data.status === 200){
-							TP.spinner.showme('Still Logging you in...');
-							TP.login.doLogin.doAjax(values);
+							TP.UI.spinner.showme('Still Logging you in...');
+//							TP.login.doLogin.doAjax(values);
 						}else{
-							TP.message.showMessage('Sorry Login Failed: '+data.status, 'bad');
+							TP.UI.message.showMessage('Sorry Login Failed: '+data.status, 'bad');
 						}
-						TP.spinner.hideme();
 					},
 					success: function(data){
 						TP.login.doLogin.success(data);
-						TP.spinner.hideme();
 					}
 				});
 				return false;
@@ -60,7 +58,7 @@ define([
 					//Now we load the home page
 					TP.login.moveToHome(true);
 				}else{
-					TP.message.showMessage(data.message, 'bad');
+					TP.UI.message.showMessage(data.message, 'bad');
 				}
 			}
 		},

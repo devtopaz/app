@@ -12,7 +12,7 @@ define([
 	Display functions
 	================================================== */
 	//#Update title
-	TP.setTitle = function(title){
+	TP.UI.setTitle = function(title){
 		$('.title').html(title);
 	};
 
@@ -43,7 +43,7 @@ define([
 	/*==================================================
 	Loading
 	================================================== */
-	TP.spinner = {
+	TP.UI.spinner = {
 		timer: null,
 		overlay: $('overlay'),
 		showme: function(message, title, timer){
@@ -51,22 +51,22 @@ define([
 				message = 'Loading...';
 			}
 			if(timer){
-				TP.spinner.timer = window.setTimeout(TP.spinner.displayCloseButton , 5000);
+				TP.UI.spinner.timer = window.setTimeout(TP.UI.spinner.displayCloseButton , 5000);
 			}
 			this.overlay.find('span').text(message);
 			this.overlay.addClass('display');
 		},
 		hideme: function(){
-			window.clearTimeout(TP.spinner.timer);
+			window.clearTimeout(TP.UI.spinner.timer);
 			this.overlay.removeClass('display');
 		},
 		displayCloseButton: function(){
-			TP.spinner.showme();
+			TP.UI.spinner.showme();
 		}
 	};
 
 	//update details on page load
-	TP.pageLoad = function(pageToLoad){
+	TP.UI.pageLoad = function(pageToLoad){
 		var useme;
 
 		//Simple check if we have been given a string
@@ -82,7 +82,7 @@ define([
 		TP.ROUTER.navigate(useme, true);
 	};
 
-	TP.message = {
+	TP.UI.message = {
 		timer: null,
 		showMessage: function(message, type, duration){
 			if(typeof duration === "undefined") duration = 5000;
@@ -97,7 +97,7 @@ define([
 	};
 
 	//set up click event to hide
-	$('messageBox').on('click', TP.message.hideMessage);
+	$('messageBox').on('click', TP.UI.message.hideMessage);
 
 	/*==================================================
 	Formatting Results

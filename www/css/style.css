@@ -4538,7 +4538,7 @@ overlay text {
   color: #95a5a6;
   position: absolute;
   left: 6px;
-  top: 20px;
+  top: 17px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\0000377}}
 .selector .btn {
@@ -4552,7 +4552,7 @@ overlay text {
   margin: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\0000387}}
-.selector #uname {
+.selector #email {
   margin-bottom: 25px;
 }
 
@@ -4703,19 +4703,20 @@ Table of Contents
 	#shell
 		#Content
 			#page
+	#Message Box
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\0000390}}
 * {
   background-size: 100%;
   background-repeat: no-repeat;
   -webkit-tap-highlight-color: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\0000394}}
 *::selection {
   background: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\0000397}}
 .iOS * {
   -webkit-backface-visibility: hidden;
   -webkit-touch-callout: none;
@@ -4728,13 +4729,13 @@ Table of Contents
   /* prevent copy paste, to allow, change 'none' to 'text' */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003105}}
 .none {
   display: none !important;
 }
 
 /* #Main Styles ------------------------------------------------------------------------ */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003108}}
 body {
   height: 100%;
   width: 100%;
@@ -4751,21 +4752,21 @@ body {
   transition: transform 0.2s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003122}}
 body[orient="landscape"] {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003128}}
 debug {
   position: fixed;
   top: 0;
   z-index: 4;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003133}}
 debug li {
   background: none repeat scroll 0 0 #53838E;
   padding: 3px;
@@ -4777,7 +4778,7 @@ debug li {
   line-height: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003145}}
 shell {
   *zoom: 1;
   -webkit-transition: background 0.2s ease;
@@ -4792,11 +4793,11 @@ shell:after {
   display: table;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003148}}
 shell overlay {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003152}}
 shell content {
   *zoom: 1;
   max-width: 100%;
@@ -4820,7 +4821,7 @@ shell content:after {
   display: table;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003159}}
 shell content page {
   display: block;
   width: 100%;
@@ -4836,4 +4837,96 @@ shell content page:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003173}}
+messagebox {
+  height: 12%;
+  min-height: 51px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #000;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82bdba), color-stop(100%, #4a8f8b));
+  background-image: -webkit-linear-gradient(#82bdba, #4a8f8b);
+  background-image: -moz-linear-gradient(#82bdba, #4a8f8b);
+  background-image: -o-linear-gradient(#82bdba, #4a8f8b);
+  background-image: linear-gradient(#82bdba, #4a8f8b);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: -moz-transform 0.2s ease 0s;
+  -o-transition: -o-transform 0.2s ease 0s;
+  transition: transform 0.2s ease 0s;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003185}}
+messagebox > * {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003189}}
+messagebox.good {
+  background: #86c555;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #86c555), color-stop(100%, #6cac3b));
+  background-image: -webkit-linear-gradient(#86c555, #6cac3b);
+  background-image: -moz-linear-gradient(#86c555, #6cac3b);
+  background-image: -o-linear-gradient(#86c555, #6cac3b);
+  background-image: linear-gradient(#86c555, #6cac3b);
+  color: #FFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003194}}
+messagebox.bad {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e74c3c), color-stop(100%, #d62c1a));
+  background-image: -webkit-linear-gradient(#e74c3c, #d62c1a);
+  background-image: -moz-linear-gradient(#e74c3c, #d62c1a);
+  background-image: -o-linear-gradient(#e74c3c, #d62c1a);
+  background-image: linear-gradient(#e74c3c, #d62c1a);
+  color: #FFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003198}}
+messagebox.notice {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f39c12), color-stop(100%, #c87f0a));
+  background-image: -webkit-linear-gradient(#f39c12, #c87f0a);
+  background-image: -moz-linear-gradient(#f39c12, #c87f0a);
+  background-image: -o-linear-gradient(#f39c12, #c87f0a);
+  background-image: linear-gradient(#f39c12, #c87f0a);
+  color: #FFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003203}}
+messagebox.show {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003207}}
+messagebox message {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003212}}
+messagebox message div {
+  width: 100%;
+  padding: 0 25px 0 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003218}}
+messagebox close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
 }
