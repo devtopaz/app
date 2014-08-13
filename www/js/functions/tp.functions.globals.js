@@ -73,7 +73,7 @@ Globals
 					TP.AJAX = TP.HTTP+'app/';
 				break;
 			case "www.topazmarinesafetyapp.com" :
-					TP.ENVIROMENT = 'website',
+					TP.ENVIROMENT = 'website';
 				break;
 			case "192.168.0.25":
 					TP.ENVIROMENT = 'mobilePhone',
