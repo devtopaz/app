@@ -14,7 +14,7 @@
 Is Mobile - If true then we are a mobile
 ================================================== */
 	TP.isMobile = true;
-	if (document.URL.indexOf("local") > 0 || document.URL.indexOf("sex") > 0) {
+	if (document.URL.indexOf("local") > 0 || document.URL.indexOf("topazmarinesafetyapp") > 0) {
 		TP.isMobile = false;
 	}
 
@@ -57,23 +57,3 @@ Bind C to be alert on mobile console.log in desktop
 			return true;
 		};
 	}
-
-/*==================================================
- Array Functions
- ================================================== */
-//Array.prototype.removeAllValues = function() {
-//	var what, a = arguments, L = a.length, ax;
-//	while (L && this.length) {
-//		what = a[--L];
-//		while ((ax = this.indexOf(what)) !== -1) {
-//			this.splice(ax, 1);
-//		}
-//	}
-//	return this;
-//};
-//Array.prototype.keepValue = function(val) {
-//	function checkMe(el){
-//		return val === el;
-//	}
-//	return this.filter(checkMe);
-//};

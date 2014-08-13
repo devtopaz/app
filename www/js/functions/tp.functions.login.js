@@ -44,7 +44,7 @@ define([
 				return false;
 			},
 			success: function(data){
-				if(data.privateKey){
+				if(data.uid){
 					Object.keys(data).forEach(function(key){
 						var me = data[key];
 						if(typeof me === "string"){ //If I'm a string then just add it to locastorage
@@ -104,7 +104,7 @@ define([
 		checkLoginState : function() { //We use this state to enable us to use the function on every page load to check if the user is logged in
 			var hash = window.location.hash.substring(1);
 			var loggedInState = true;
-			if(localStorage.getItem('privateKey')=== null) {loggedInState = false;}
+			if(localStorage.getItem('uid')=== null) {loggedInState = false;}
 
 			if(sessionStorage.tmpPin){
 				//Top level, if the user hasn't set a pin number

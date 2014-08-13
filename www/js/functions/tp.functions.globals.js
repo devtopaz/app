@@ -43,7 +43,7 @@ Globals
 	TP.CDN = 'www.topazmarinesafetyapp.com/';
 	TP.HTTP = 'https://www.topazmarinesafetyapp.com/';
 	TP.STATE = function(){
-		if(localStorage.getItem('privateKey')===null){
+		if(localStorage.getItem('pkey')===null){
 			return false;
 		}else{
 			$('body').data('state','loggedin');
@@ -51,7 +51,8 @@ Globals
 		}
 	}();
 	TP.CURRENTLOG = 'na';
-	TP.TEMPLATE = 'footerout';
+	TP.OBDEFAULTS = TP.OB.defaults();
+	TP.CHECKLIST = TP.OB.checkListDefault();
 	TP.HASH = '';
 	TP.PREVIOUSHASH = '';
 	TP.VIEWS = {};
@@ -65,7 +66,8 @@ Globals
 //check type of envoiment we are in
 	var checkEnvio = function () {
 		switch (window.location.hostname) {
-			case "topaz.local":
+			case "topaz.local" :
+			case "www.topazmarinesafetyapp.com" :
 					TP.ENVIROMENT = 'localApp',
 					TP.CDN = 'topaz.local/',
 					TP.HTTP = 'http://topaz.local/',
@@ -106,6 +108,25 @@ localStorage - TP Gloabls
 		localStorage[variable] = JSON.stringify(TP[variable]);
 	};
 
+
+/*==================================================
+ Navigation - update details on page load
+ ================================================== */
+TP.pageLoad = function(pageToLoad){
+	var useme;
+
+	//Simple check if we have been given a string
+	if(typeof pageToLoad === "string"){
+		useme = pageToLoad;
+	}else if(document.location.hash){
+		useme = TP.HASH;
+	}else{
+//			c('Nothing was given in the pageLoad');
+	}
+
+	//Update the current view, don't re-redner it
+	TP.ROUTER.navigate(useme, true);
+};
 /*==================================================
 Networking functions
 ================================================== */
@@ -155,9 +176,9 @@ Networking functions
 			}
 
 			//add phonegap debugging script
-			//var d = document.createElement('script');
-			//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
-			//document.getElementsByTagName('body')[0].appendChild(d);
+			var d = document.createElement('script');
+			d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
+			document.getElementsByTagName('body')[0].appendChild(d);
 		}else{
 			$.getScript('http://localhost:35729/livereload.js');
 		}

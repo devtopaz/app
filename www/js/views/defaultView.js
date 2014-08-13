@@ -8,15 +8,10 @@ define([
 // #Set up the Deult router view ------------------------------------------------------
 	TP.defaultView = function(){ //Default controller for all views
 		//extend the view with the default home view
-		var HomeView = Backbone.View.extend({
+		var DefaultView = Backbone.View.extend({
 			el: 'body > shell',
 			events: { //Add click events for global clicks
 				'click logo a': 'goHome',
-			},
-			render: function () {
-				//Output correct template
-				this.$el.html(JST['templates/comp/shellOut.ejs']());
-//				this.slideMenu.init();
 			},
 			doLogOut: function(){
 				TP.login.doLogOut();
@@ -38,10 +33,15 @@ define([
 				document.body.removeAttribute('class');
 				document.body.setAttribute('class',desiredClass); //Update class on body
 			},
+			render: function () {
+				//Output correct template
+				this.$el.html(JST['templates/comp/shell.ejs']);//Add type to html
+				$('html').removeClass('positive');
+			},
 		});
-		TP.DV = new HomeView();
+		TP.DV = new DefaultView();
 		TP.DV.render();
-		return HomeView;
+		return DefaultView;
 	}();
 
 });

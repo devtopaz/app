@@ -4,18 +4,18 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "co.uk.couplessexdiaries"
-        version   = "0.0.39">
+        id        = "com.topazmarinesafetyapp"
+        version   = "1.0.0">
 
-    <name>Sex Diaries</name>
+    <name>Topaz Marine</name>
 
-    <description>Sex Diaries is a sex tracker aimed at couples. Track each sex invidiually with indepth statistics.</description>
+    <description>Topaz.</description>
 
-    <author email="support@sexdiaries.co.uk" href="http://www.sexdiaries.co.uk">
+    <author email="support@topazmarinesafetyapp.com" href="http://www.topazmarinesafetyapp.com">
         Sex Diaries
     </author>
 
-    <preference name="phonegap-version" value="3.4.0" /> <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version" value="3.5.0" /> <!-- all: current version of PhoneGap -->
 
     <!--/////////////////////////////////////////////////
                      Features to be added

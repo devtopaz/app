@@ -58,11 +58,14 @@ require.config({
 		hammerjs: 'libs/plugins/hammer.min',
 		date: 'libs/plugins/date',
 		forms: 'libs/plugins/hutber.forms',
-		ui : 'functions/sd.functions.ui',
-		tp : 'functions/sd.functions.globals',
-		ge : 'functions/sd.functions.globalEvents',
-		tpl : 'functions/sd.functions.login',
+		ui : 'functions/tp.functions.ui',
+		tp : 'functions/tp.functions.globals',
+		ge : 'functions/tp.functions.globalEvents',
+		tpl : 'functions/tp.functions.login',
+		ob : 'functions/tp.functions.observations',
+		save : 'functions/tp.functions.save',
 		dv : 'views/defaultView',
+		dov : 'views/defaultObservationView',
 		ldv : 'views/loggedinView',
 		JST : 'templates'
 	}
@@ -71,23 +74,46 @@ require.config({
 /*==================================================
 Routers
 ==================================================*/
-// Requires ----------------
+// Requires -----------------------
 require([
 		'backbone',
 		'modernizr',
-// Routes ----------------
+// Routes -------------------------
 		'routes/router',
-// Views ----------------
+// Views --------------------------
 		'views/indexView',
 		'views/homeView',
+		'views/signUpView',
+		'views/forgottenView',
+
+// Users----------------------------
+		'views/users/setpin',
+		'views/users/confirmpin',
+		'views/users/pinsave',
+		'views/users/pin',
+		'views/users/settings',
+
+// Observations---------------------
+		'views/observation/new',
+		'views/observation/observation',
+		'views/observation/reinforce',
+		'views/observation/review',
+		'views/observation/observationdetails',
+		'views/observation/comments',
+		'views/observation/success',
+		'views/observation/failed',
 
 // Functions -----------------------
 		'tp',
 		'tpl',
+		'ob',
 		'dv',
+		'dov',
 		'ldv',
 		'ui',
+		'save',
 		'ge',
+		'date',
 
 ], function () {
 /*==================================================
@@ -97,7 +123,7 @@ set arguments to values for ease of reading arguments
         Router = arguments[2],
 		IndexView = arguments[3],
 		HomeView = arguments[4],
-		TP = arguments[9],
+		TP = arguments[27],
 		myself = arguments;
 
 	/*==================================================
@@ -120,22 +146,68 @@ set arguments to values for ease of reading arguments
 		Routes
 		================================================== */
 		var names = [];
-//		names[6] = 'login';
-//		names[7] = 'forgotten';
-//		names[8] = 'signup';
+		names[5] = 'signup';
+		names[6] = 'forgotten';
+		names[7] = 'setpin';
+		names[8] = 'confirmpin';
+		names[9] = 'pinsave';
+		names[10] = 'pin';
+		names[11] = 'settings';
+		names[12] = 'new';
+		names[13] = 'observation';
+		names[14] = 'reinforce';
+		names[15] = 'review';
+		names[16] = 'observationdetails';
+		names[17] = 'comments';
+		names[18] = 'success';
+		names[19] = 'failed';
 		var myArgs = myself;
 
 		names.forEach(function(me, key){
 			var functionName = me+"View";
 			TP.VIEWS[functionName] = new myArgs[key]();
 			TP.ROUTER.on('route:'+me, function(){
-				TP.VIEWS[functionName].render(); // succeeds
+				if(TP.OBDEFAULTS.type===null && (
+						me === "observation" ||me === "reinforce" ||me === "review" ||me === "observationdetails" || me === "comments" || me === "success"
+					)
+				){
+					TP.pageLoad('new');
+				}else {
+					TP.VIEWS[functionName].render(); // succeeds
+				}
 			});
 		});
 
+		TP.ROUTER.on('route:positive route:negative', function(){
+			if(TP.OBDEFAULTS.type===null){
+				TP.pageLoad('new');
+			}else {
+				TP.VIEWS.observation.render(); // succeeds
+			}
+		});
+
+	//# Details Routers ----------------------------------------------------------------
+	var details = []
+		details[0] = 'procedures';
+		details[1] = 'preparation';
+		details[2] = 'lineoffire';
+		details[3] = 'ppe';
+		details[4] = 'tools';
+
+	details.forEach(function(me){
+		TP.ROUTER.on('route:'+me, function(){
+			if(TP.OBDEFAULTS.type===null){
+				TP.pageLoad('new');
+			}else {
+				TP.VIEWS.observationdetails.render(); // succeeds
+			}
+		});
+	});
+
+
 	//# Default router ----------------------------------------------------------------
 		TP.ROUTER.on('route:index route:home', function(){
-			if(localStorage.getItem('privateKey')!==null){
+			if(localStorage.getItem('uid')!==null){
 				TP.VIEWS.homeView.render();
 			}else{
 				TP.VIEWS.indexView.render();

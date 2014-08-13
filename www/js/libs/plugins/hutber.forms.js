@@ -62,7 +62,7 @@
                     var from = me.data('from'),
                         to = me.data('to');
                     if(me.val() && me.val().length < from || me.val().length > to){
-                        me.addClass('error').parent().append(form.Globals.$error.clone().text('Character needs to be between '+from+' & '+to));
+                        me.parent().addClass('error').append(form.Globals.$error.clone().text('Character needs to be between '+from+' & '+to));
                     }
                 }
             },
@@ -126,7 +126,7 @@
                     //make sure we aren't empty and that we have previously written on it.
                     if(inputVal.length===0 && myself.hasClass('previous')){
                         if(form.validation.errorMe(myself)===0){
-                            myself.addClass('error').parent().append(form.Globals.$error.clone().text(errorText));
+                            myself.parent().addClass('error').append(form.Globals.$error.clone().text(errorText));
                         }
                     }else{
                         //If we aren't empy make sure we don't have any charater limits set
@@ -182,7 +182,7 @@
                         $parentMe.find('span').remove();
 //                        me.removeAttr('disabled');
                         if(parseInt(data,10)>=1){
-                            me.addClass('error').parent().append(form.Globals.$error.clone().text('Sorry, this '+me.attr('placeholder')+' is taken'));
+                            me.parent().addClass('error').append(form.Globals.$error.clone().text('Sorry, this '+me.attr('placeholder')+' is taken'));
                         }
 
                     },
