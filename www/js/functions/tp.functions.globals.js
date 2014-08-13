@@ -67,11 +67,13 @@ Globals
 	var checkEnvio = function () {
 		switch (window.location.hostname) {
 			case "topaz.local" :
-			case "www.topazmarinesafetyapp.com" :
 					TP.ENVIROMENT = 'localApp',
 					TP.CDN = 'topaz.local/',
 					TP.HTTP = 'http://topaz.local/',
 					TP.AJAX = TP.HTTP+'app/';
+				break;
+			case "www.topazmarinesafetyapp.com" :
+					TP.ENVIROMENT = 'website',
 				break;
 			case "192.168.0.25":
 					TP.ENVIROMENT = 'mobilePhone',
@@ -176,9 +178,9 @@ Networking functions
 			}
 
 			//add phonegap debugging script
-			var d = document.createElement('script');
-			d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
-			document.getElementsByTagName('body')[0].appendChild(d);
+			//var d = document.createElement('script');
+			//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
+			//document.getElementsByTagName('body')[0].appendChild(d);
 		}else{
 			$.getScript('http://localhost:35729/livereload.js');
 		}
