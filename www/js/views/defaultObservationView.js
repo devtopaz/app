@@ -9,7 +9,7 @@ define([
 
 	var Date = arguments[1];
 
-	// The default sex view view ----------------------------------------------------------
+	// The default view ----------------------------------------------------------
 	TP.defaultObservationView = function(){
 		//set up homeview
 		var observationView = TP.defaultView.extend({
@@ -26,7 +26,6 @@ define([
 					item = $(el.currentTarget);
 					TP.OBDEFAULTS.title = item.find('span').html(),
 					TP.OBDEFAULTS.name = item.find('input').attr('name'),
-					TP.OBDEFAULTS.list = TP.CHECKLIST[TP.OBDEFAULTS.type][TP.OBDEFAULTS.name];
 				TP.pageLoad(TP.OBDEFAULTS.name);
 			},
 			checkABox: function(el){
@@ -36,7 +35,7 @@ define([
 					inputMe.attr('checked', 'checked');
 					TP.CHECKLIST[TP.OBDEFAULTS.type][TP.OBDEFAULTS.name]['state'] = true;
 					TP.CHECKLIST[TP.OBDEFAULTS.type][TP.OBDEFAULTS.name].details[name] = true;
-				TP.save.prepareDataForSave()
+				//TP.save.prepareDataForSave()
 			},
 			loadPrevious: {
 				that: this,

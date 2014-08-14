@@ -19,7 +19,7 @@ define([
 		template: JST['templates/observation/new.ejs'],
 		render: function () {
 			var rightNow = new Date();
-			//Update the current sex
+			//reset everything for the fresh observation
 			TP.OBDEFAULTS.type = '';
 			TP.OBDEFAULTS.time = rightNow;
 

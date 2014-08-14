@@ -168,7 +168,7 @@ set arguments to values for ease of reading arguments
 			TP.VIEWS[functionName] = new myArgs[key]();
 			TP.ROUTER.on('route:'+me, function(){
 				if(TP.OBDEFAULTS.type===null && (
-						me === "observation" ||me === "reinforce" ||me === "review" ||me === "observationdetails" || me === "comments" || me === "success"
+						me === "observation" ||me === "reinforce" ||me === "review" ||me === "observationdetails" || me === "comments"
 					)
 				){
 					TP.pageLoad('new');

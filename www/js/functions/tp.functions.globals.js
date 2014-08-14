@@ -37,11 +37,11 @@ Globals
 ================================================== */
 
 // #Globals for TP ------------------------------------------------------
-	//Setup fullsex so we can build other numbers from this.
+	//Setup so we can build other numbers from this.
 	TP.VERSION = '0.0.1';
 	TP.ENVIROMENT = 'liveApp';
 	TP.CDN = 'www.topazmarinesafetyapp.com/';
-	TP.HTTP = 'https://www.topazmarinesafetyapp.com/';
+	TP.HTTP = 'http://www.topazmarinesafetyapp.com/';
 	TP.STATE = function(){
 		if(localStorage.getItem('pkey')===null){
 			return false;
@@ -73,7 +73,7 @@ Globals
 					TP.AJAX = TP.HTTP+'app/';
 				break;
 			case "www.topazmarinesafetyapp.com" :
-					TP.ENVIROMENT = 'website';
+					TP.WEBSITE = 'website';
 				break;
 			case "192.168.0.25":
 					TP.ENVIROMENT = 'mobilePhone',
@@ -163,24 +163,25 @@ Networking functions
 
 		//Set up scripts to get loaded depending on envoiment
 		if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
+			if(!TP.WEBSITE) {
+				//This checker will active when the app is closed, on repoen this gets set and user has to enter their pin number
+				if (typeof sessionStorage.blockpin === "undefined") {
+					sessionStorage.setItem('appOpenedFirstTime', true);
+				}
+				sessionStorage.removeItem('blockpin');
 
-			//This checker will active when the app is closed, on repoen this gets set and user has to enter their pin number
-			if(typeof sessionStorage.blockpin === "undefined" ){
-				sessionStorage.setItem('appOpenedFirstTime',true);
+				//load in cordova.js if its not already there
+				if (typeof cordova === "undefined") {
+					var c = document.createElement('script');
+					c.setAttribute("src", "cordova.js");
+					document.body.appendChild(c);
+				}
+
+				//add phonegap debugging script
+				//var d = document.createElement('script');
+				//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
+				//document.getElementsByTagName('body')[0].appendChild(d);
 			}
-			sessionStorage.removeItem('blockpin');
-
-			//load in cordova.js if its not already there
-			if(typeof cordova === "undefined"){
-				var c = document.createElement('script');
-				c.setAttribute("src","cordova.js");
-				document.body.appendChild(c);
-			}
-
-			//add phonegap debugging script
-			//var d = document.createElement('script');
-			//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
-			//document.getElementsByTagName('body')[0].appendChild(d);
 		}else{
 			$.getScript('http://localhost:35729/livereload.js');
 		}

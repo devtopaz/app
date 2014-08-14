@@ -18,7 +18,6 @@ define([
 				time: null,
 				comment: null,
 				vessel: null,
-				list: null,
 			}
 		},
 		checkListDefault:function(){

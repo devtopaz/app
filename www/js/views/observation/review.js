@@ -39,7 +39,7 @@ define([
 						TP.pageLoad('failed');
 					} else {
 						TP.UI.spinner.hideme();
-						TP.CHECKLIST = TP.OB.checkListDefault();
+						TP.save.reset();
 						TP.pageLoad('success');
 					}
 				}
