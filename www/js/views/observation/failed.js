@@ -3,17 +3,13 @@ define([
 ], function () {
 	'use strict';
 	//set up homeview
-	var success = TP.defaultView.extend({
+	var failed = TP.defaultView.extend({
 		el: 'page',
-		events: {
-			'click .setpin .digit': 'checkdigit',
-		},
-		currentPw: "",
-		template: JST['templates/observation/success.ejs'],
+		template: JST['templates/observation/failed.ejs'],
 		render: function () {
 			this.$el.html(this.template());
-			TP.UI.setTitle('Success');
+			TP.UI.setTitle('Submission failed');
 		},
 	});
-	return success;
+	return failed;
 });

@@ -11,7 +11,7 @@ define([
 		},
 		saveText: function(el){
 			var textarea = $(el.currentTarget).val();
-			TP.OBDEFAULTS.comment = textarea;
+			TP.DEFAULTS.comment = textarea;
 		},
 		render: function () {
 			this.$el.html(this.template());

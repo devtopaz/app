@@ -9,7 +9,7 @@ define([
 			TP.DOV.render();
 
 			//Set the page's title
-			TP.UI.setTitle(TP.OBDEFAULTS.type + ' Observation');
+			TP.UI.setTitle(TP.DEFAULTS.type + ' Observation');
         }
     });
     return observation;

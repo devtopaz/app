@@ -91,7 +91,6 @@ define([
 			},
 			success: function(data){
 				if(data.current==="1"){
-					localStorage.setItem('GLOBALSEXNUMBERS',JSON.stringify(data.GLOBALSEXNUMBERS));
 					TP.login.moveToHome();
 					TP.spinner.hideme();
 				}else{

@@ -27,21 +27,23 @@ define([
 				dataType: 'json',
 				data: dataToSend,
 				error: function (data) {
+					TP.DEFAULTS.type = '';
 					TP.save.saveToStoreage(dataToSend);
 					TP.pageLoad('failed');
 					TP.UI.spinner.hideme();
 				},
 				success: function (data) {
+					TP.DEFAULTS.type = '';
 					//TODO display the error
-					if (data.error) {
+					//if (data.error) {
 						TP.UI.spinner.hideme();
 						TP.save.saveToStoreage(dataToSend);
 						TP.pageLoad('failed');
-					} else {
-						TP.UI.spinner.hideme();
-						TP.save.reset();
-						TP.pageLoad('success');
-					}
+					//} else {
+					//	TP.UI.spinner.hideme();
+					//	TP.save.reset();
+					//	TP.pageLoad('success');
+					//}
 				}
 			});
 		},

@@ -51,7 +51,7 @@ Globals
 		}
 	}();
 	TP.CURRENTLOG = 'na';
-	TP.OBDEFAULTS = TP.OB.defaults();
+	TP.DEFAULTS = TP.OB.defaults();
 	TP.CHECKLIST = TP.OB.checkListDefault();
 	TP.HASH = '';
 	TP.PREVIOUSHASH = '';
@@ -145,7 +145,7 @@ Networking functions
 			states[Connection.CELL_4G]  = 'Cell 4G connection';
 			states[Connection.CELL]     = 'Cell generic connection';
 			states[Connection.NONE]     = 'No network connection';
-//			c('Connection type: ' + states[networkState]);
+			c('Connection type: ' + states[networkState]);
 		}else{
 			c('Connection not ready yet');
 		}
@@ -177,6 +177,7 @@ Networking functions
 					document.body.appendChild(c);
 				}
 
+				TP.checkConnection();
 				//add phonegap debugging script
 				//var d = document.createElement('script');
 				//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");

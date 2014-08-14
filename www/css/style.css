@@ -495,7 +495,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* #Text shadow default effects ------------------------------------------------------------------------ */
 /* #Page Typography ------------------------------------------------------------------------ */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000338}}
 body {
   padding: 0;
   margin: 0;
@@ -506,7 +506,7 @@ body {
   line-height: 18px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000341}}
 a {
   color: #003768;
   text-decoration: none;
@@ -514,18 +514,18 @@ a {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000342}}
 a:hover, a:focus {
   color: #3e7f7c;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000343}}
 p a, p a:visited {
   line-height: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000345}}
 h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: sanspro;
@@ -534,13 +534,13 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000353}}
 h1 {
   font-size: 2.5em;
   line-height: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_typography\.scss}line{font-family:\0000355}}
 img {
   width: 100%;
 }
@@ -4209,9 +4209,10 @@ overlay text {
   margin: 5px auto;
   text-align: center;
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 21px;
   width: 100%;
-  font-family: sansprolight, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: sanspro, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-bottom: 10px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -4227,7 +4228,7 @@ overlay text {
   border-radius: 4px;
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.51);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000341}}
 .btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle, a.btn:hover, a.btn:focus, .btn-group:focus a.btn.dropdown-toggle {
   background-color: #7dbfbd;
   outline: none;
@@ -4236,7 +4237,7 @@ overlay text {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000350}}
 .btn:active, .btn-group.open .btn.dropdown-toggle, .btn.active, a.btn:active, .btn-group.open a.btn.dropdown-toggle, a.btn.active {
   background-color: black;
   color: fade(#828485, 75%);
@@ -4244,7 +4245,7 @@ overlay text {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000358}}
 .btn.disabled, .btn[disabled], a.btn.disabled, a.btn[disabled] {
   background-color: #605f5b;
   color: fade(#828485, 75%);
@@ -4254,22 +4255,22 @@ overlay text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7000);
   opacity: 70;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000369}}
 .btn.btn-large, a.btn.btn-large {
   font-size: 21.852px;
   /* 17px */
   line-height: 20px;
   padding: 12px 18px 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000374}}
 .btn.btn-large > [class^="fui-"], a.btn.btn-large > [class^="fui-"] {
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000377}}
 .btn.btn-large > [class^="fui-"].pull-right, a.btn.btn-large > [class^="fui-"].pull-right {
   margin-right: -2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000385}}
 .btn.btn-primary, a.btn.btn-primary {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #7cbebb), color-stop(100%, #468e8a));
   background-image: -webkit-linear-gradient(top, #7cbebb 47%, #468e8a 100%);
@@ -4285,7 +4286,7 @@ overlay text {
 .btn.btn-primary:active, .btn-group.open .btn.btn-primary.dropdown-toggle, .btn.btn-primary.active, a.btn.btn-primary:active, .btn-group.open a.btn.btn-primary.dropdown-toggle, a.btn.btn-primary.active {
   background-image: #69a19e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000388}}
 .btn.btn-info, a.btn.btn-info {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #3498db), color-stop(100%, #196090));
   background-image: -webkit-linear-gradient(top, #3498db 47%, #196090 100%);
@@ -4301,7 +4302,7 @@ overlay text {
 .btn.btn-info:active, .btn-group.open .btn.btn-info.dropdown-toggle, .btn.btn-info.active, a.btn.btn-info:active, .btn-group.open a.btn.btn-info.dropdown-toggle, a.btn.btn-info.active {
   background-image: #2c81ba;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000391}}
 .btn.btn-danger, a.btn.btn-danger {
   color: #FFF;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #e74c3c), color-stop(100%, #a82315));
@@ -4318,7 +4319,7 @@ overlay text {
 .btn.btn-danger:active, .btn-group.open .btn.btn-danger.dropdown-toggle, .btn.btn-danger.active, a.btn.btn-danger:active, .btn-group.open a.btn.btn-danger.dropdown-toggle, a.btn.btn-danger.active {
   background-image: #c44033;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000395}}
 .btn.btn-success, a.btn.btn-success {
   color: #FFF;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #86c555), color-stop(100%, #54862e));
@@ -4335,7 +4336,7 @@ overlay text {
 .btn.btn-success:active, .btn-group.open .btn.btn-success.dropdown-toggle, .btn.btn-success.active, a.btn.btn-success:active, .btn-group.open a.btn.btn-success.dropdown-toggle, a.btn.btn-success.active {
   background-image: #71a748;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000399}}
 .btn.btn-warning, a.btn.btn-warning {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #f1c40f), color-stop(100%, #927608));
   background-image: -webkit-linear-gradient(top, #f1c40f 47%, #927608 100%);
@@ -4351,7 +4352,7 @@ overlay text {
 .btn.btn-warning:active, .btn-group.open .btn.btn-warning.dropdown-toggle, .btn.btn-warning.active, a.btn.btn-warning:active, .btn-group.open a.btn.btn-warning.dropdown-toggle, a.btn.btn-warning.active {
   background-image: #cca60c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003102}}
 .btn.btn-inverse, a.btn.btn-inverse {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #34495e), color-stop(100%, #10161c));
   background-image: -webkit-linear-gradient(top, #34495e 47%, #10161c 100%);
@@ -4367,7 +4368,7 @@ overlay text {
 .btn.btn-inverse:active, .btn-group.open .btn.btn-inverse.dropdown-toggle, .btn.btn-inverse.active, a.btn.btn-inverse:active, .btn-group.open a.btn.btn-inverse.dropdown-toggle, a.btn.btn-inverse.active {
   background-image: #2c3e4f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003108}}
 .btn > [class^="fui-"], a.btn > [class^="fui-"] {
   margin: 0 4px;
   position: relative;
@@ -4380,26 +4381,31 @@ overlay text {
   zoom: 1;
   *display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003115}}
 .btn > [class^="fui-"].pull-right, a.btn > [class^="fui-"].pull-right {
   margin-right: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003120}}
 .btn.btnright, a.btn.btnright {
   width: auto;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003125}}
 .btn.btnmiddle, a.btn.btnmiddle {
   width: auto;
   margin: 0 auto;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003130}}
+.btn.btnalt, a.btn.btnalt {
+  font-family: sanspro;
+  font-size: 1.2rem;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003139}}
 .btn-toolbar .btn.active {
   color: #828485;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003142}}
 .btn-toolbar .btn:first-child {
   -webkit-border-radius: 6px 0 0 6px;
   -moz-border-radius: 6px 0 0 6px;
@@ -4407,7 +4413,7 @@ overlay text {
   -o-border-radius: 6px 0 0 6px;
   border-radius: 6px 0 0 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003145}}
 .btn-toolbar .btn:last-child {
   -webkit-border-radius: 0 6px 6px 0;
   -moz-border-radius: 0 6px 6px 0;
@@ -4415,42 +4421,42 @@ overlay text {
   -o-border-radius: 0 6px 6px 0;
   border-radius: 0 6px 6px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003148}}
 .btn-toolbar .btn > [class^="fui-"] {
   font-size: 16px;
   top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003155}}
 .btn-tip {
   font-weight: 300;
   padding-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003163}}
 .btn-group > .btn {
   border-radius: 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003169}}
 .btn-group > .btn:active + .btn, .btn-group > .btn.active + .btn {
   border-left-color: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003173}}
 .btn-group > .btn:first-of-type {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003177}}
 .btn-group > .btn:last-of-type {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003181}}
 .btn-group > .btn + .btn {
   margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003184}}
 .btn-group > .btn + .dropdown-toggle {
   border-left: 2px solid fade(#34495e, 15%);
   padding-left: 13px;
@@ -4459,17 +4465,17 @@ overlay text {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003190}}
 .btn-group > .btn + .dropdown-toggle .caret {
   margin-left: 3px;
   margin-right: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003196}}
 .btn-group > .btn.btn-huge + .dropdown-toggle .caret {
   margin-left: 7px;
   margin-right: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\00003202}}
 .btn-group > .btn.btn-small + .dropdown-toggle .caret {
   margin-left: 0;
   margin-right: 0;
@@ -4640,6 +4646,10 @@ overlay text {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\000032}}
+.pin page, .setpin page, .confirmpin page, .pinsave page {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\000035}}
 .pin .pingshell, .setpin .pingshell, .confirmpin .pingshell, .pinsave .pingshell {
   width: 83.05085%;
   float: left;
@@ -4647,12 +4657,12 @@ overlay text {
   display: inline;
   margin-left: 8.47458%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\000039}}
 .pin .pingshell span, .setpin .pingshell span, .confirmpin .pingshell span, .pinsave .pingshell span {
   color: #569bc5;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000313}}
 .pin .pinpad, .setpin .pinpad, .confirmpin .pinpad, .pinsave .pinpad {
   position: fixed;
   bottom: 0;
@@ -4660,7 +4670,7 @@ overlay text {
   background-color: #222f3d;
   padding: 1.69492% 2% 0 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000321}}
 .pin .digit, .setpin .digit, .confirmpin .digit, .pinsave .digit {
   background-color: #2c3e50;
   font-family: sanspro;
@@ -4672,20 +4682,20 @@ overlay text {
   margin-right: 1.69492%;
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000322}}
 .pin .digit:active, .setpin .digit:active, .confirmpin .digit:active, .pinsave .digit:active {
   background-color: #45627e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000325}}
 .pin .digit.forgotten, .setpin .digit.forgotten, .confirmpin .digit.forgotten, .pinsave .digit.forgotten {
   font-size: 1rem;
   line-height: 3rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000329}}
 .pin .digit.icon-left-open, .setpin .digit.icon-left-open, .confirmpin .digit.icon-left-open, .pinsave .digit.icon-left-open {
   line-height: 1.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000338}}
 .pin .digit:nth-child(3n), .setpin .digit:nth-child(3n), .confirmpin .digit:nth-child(3n), .pinsave .digit:nth-child(3n) {
   width: 32.20339%;
   float: right;
@@ -4694,14 +4704,14 @@ overlay text {
   display: inline;
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000343}}
 .pin .pininputs, .setpin .pininputs, .confirmpin .pininputs, .pinsave .pininputs {
   width: 270px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000347}}
 .pin .pininputs > div, .setpin .pininputs > div, .confirmpin .pininputs > div, .pinsave .pininputs > div {
   background-color: #FFF;
   border: 1px solid #DDD;
@@ -4711,11 +4721,11 @@ overlay text {
   float: left;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000355}}
 .pin .pininputs > div:last-child, .setpin .pininputs > div:last-child, .confirmpin .pininputs > div:last-child, .pinsave .pininputs > div:last-child {
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000359}}
 .pin .pininputs .active:before, .setpin .pininputs .active:before, .confirmpin .pininputs .active:before, .pinsave .pininputs .active:before {
   height: 60%;
   width: 60%;
@@ -4730,7 +4740,7 @@ overlay text {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000370}}
 .pin .nostats, .setpin .nostats, .confirmpin .nostats, .pinsave .nostats {
   position: absolute;
   left: 50%;
@@ -4741,12 +4751,12 @@ overlay text {
   -ms-transform: translate(-50%, -50%);
   width: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000373}}
 .pin .nostats h1, .setpin .nostats h1, .confirmpin .nostats h1, .pinsave .nostats h1 {
   margin-bottom: 20px;
   font-size: 1.7rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\0000377}}
 .pin .nostats a, .setpin .nostats a, .confirmpin .nostats a, .pinsave .nostats a {
   margin-top: 20px;
   font-size: 1.5rem;
@@ -4906,27 +4916,40 @@ observation input[type=checkbox] {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003108}}
-.review .btn {
-  text-align: center;
-  width: 44.44444%;
-  float: left;
-  margin-right: 1.85185%;
-  display: inline;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003112}}
 .review .time {
   font-weight: bold;
   font-size: 1.85rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003116}}
-.review .btn:last-child {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003112}}
+.review .deleteObservation {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003115}}
+.review .submitObservation {
+  width: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003119}}
+.review .edit .btn {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003122}}
+.review .edit .deleteObservation {
+  width: 44.44444%;
+  float: left;
+  margin-right: 1.85185%;
+  display: inline;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003126}}
+.review .edit .submitObservation {
   width: 44.44444%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
+  width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003131}}
 .review .reviewBox {
   padding: 0 20px 10px;
   background: #fff;
@@ -4936,7 +4959,7 @@ observation input[type=checkbox] {
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.51);
   margin-bottom: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003138}}
 .review .reviewBox h3 {
   color: #003768;
   text-shadow: none;
@@ -4944,20 +4967,20 @@ observation input[type=checkbox] {
   font-size: 1.4rem;
   font-family: sansprolight;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003145}}
 .review .reviewBox ul, .review .reviewBox .comment {
   border-top: 1px solid #cfd0d1;
   border-bottom: 1px solid #cfd0d1;
   padding: 10px 0;
   margin: 10px auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003150}}
 .review .reviewBox ul li, .review .reviewBox .comment li {
   padding: 6px 0;
   text-align: left;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003155}}
 .review .reviewBox ul li:before, .review .reviewBox .comment li:before {
   content: "·";
   font-size: 5.1rem;
@@ -5061,14 +5084,14 @@ debug li {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003149}}
 .br {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   display: block;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003153}}
 .br:before, .br:after {
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -5080,7 +5103,7 @@ debug li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003164}}
 .br:after {
-  bottom: -11px;
+  bottom: -16px;
   border-top: 1px solid #006bbb;
 }
 

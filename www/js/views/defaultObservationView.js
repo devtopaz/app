@@ -24,17 +24,17 @@ define([
 			openAOption: function(el){
 				var myself = this,
 					item = $(el.currentTarget);
-					TP.OBDEFAULTS.title = item.find('span').html(),
-					TP.OBDEFAULTS.name = item.find('input').attr('name'),
-				TP.pageLoad(TP.OBDEFAULTS.name);
+					TP.DEFAULTS.title = item.find('span').html(),
+					TP.DEFAULTS.name = item.find('input').attr('name'),
+				TP.pageLoad(TP.DEFAULTS.name);
 			},
 			checkABox: function(el){
 				var currentMe = $(el.currentTarget),
 					inputMe = currentMe.find('input'),
 					name = inputMe.attr('name');
 					inputMe.attr('checked', 'checked');
-					TP.CHECKLIST[TP.OBDEFAULTS.type][TP.OBDEFAULTS.name]['state'] = true;
-					TP.CHECKLIST[TP.OBDEFAULTS.type][TP.OBDEFAULTS.name].details[name] = true;
+					TP.CHECKLIST[TP.DEFAULTS.type][TP.DEFAULTS.name]['state'] = true;
+					TP.CHECKLIST[TP.DEFAULTS.type][TP.DEFAULTS.name].details[name] = true;
 				//TP.save.prepareDataForSave()
 			},
 			loadPrevious: {
@@ -54,7 +54,7 @@ define([
 				$('observation').html(TP.DOV.ownView(data));
 				this.loadPrevious.post();
 				//Remove Classes and then readd them
-				$('html').removeClass('positive').removeClass('negative').addClass(TP.OBDEFAULTS.type);
+				$('html').removeClass('positive').removeClass('negative').addClass(TP.DEFAULTS.type);
 			}
 		});
 

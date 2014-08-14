@@ -10,18 +10,18 @@ define([
 			'change #vessel': 'changeItem',
 		},
 		changeItem: function(el){
-			TP.OBDEFAULTS.vessel = $(el.currentTarget).val();
+			TP.DEFAULTS.vessel = $(el.currentTarget).val();
 			$('.new .hide').removeClass('hide');
 		},
 		openType: function(el){
-			TP.OBDEFAULTS.type = $(el.currentTarget).data('type');
+			TP.DEFAULTS.type = $(el.currentTarget).data('type');
 		},
 		template: JST['templates/observation/new.ejs'],
 		render: function () {
-			var rightNow = new Date();
 			//reset everything for the fresh observation
-			TP.OBDEFAULTS.type = '';
-			TP.OBDEFAULTS.time = rightNow;
+			TP.DEFAULTS = TP.OB.defaults();
+			//set current Time
+			TP.DEFAULTS.time = new Date();
 
 			$('html').removeClass('positive').removeClass('negative');
 

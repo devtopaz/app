@@ -25,6 +25,7 @@ define([
 			'comments':'comments',
 			'success':'success',
 			'failed':'failed',
+			'pending':'pending',
 
 			//Observation Details
 			'procedures':'observationdetails',

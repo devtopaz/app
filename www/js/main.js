@@ -66,7 +66,6 @@ require.config({
 		save : 'functions/tp.functions.save',
 		dv : 'views/defaultView',
 		dov : 'views/defaultObservationView',
-		ldv : 'views/loggedinView',
 		JST : 'templates'
 	}
 });
@@ -102,6 +101,7 @@ require([
 		'views/observation/comments',
 		'views/observation/success',
 		'views/observation/failed',
+		'views/observation/pending',
 
 // Functions -----------------------
 		'tp',
@@ -109,7 +109,6 @@ require([
 		'ob',
 		'dv',
 		'dov',
-		'ldv',
 		'ui',
 		'save',
 		'ge',
@@ -123,7 +122,7 @@ set arguments to values for ease of reading arguments
         Router = arguments[2],
 		IndexView = arguments[3],
 		HomeView = arguments[4],
-		TP = arguments[27],
+		TP = arguments[28],
 		myself = arguments;
 
 	/*==================================================
@@ -161,13 +160,14 @@ set arguments to values for ease of reading arguments
 		names[17] = 'comments';
 		names[18] = 'success';
 		names[19] = 'failed';
+		names[20] = 'pending';
 		var myArgs = myself;
 
 		names.forEach(function(me, key){
 			var functionName = me+"View";
 			TP.VIEWS[functionName] = new myArgs[key]();
 			TP.ROUTER.on('route:'+me, function(){
-				if(TP.OBDEFAULTS.type===null && (
+				if(TP.DEFAULTS.type===null && (
 						me === "observation" ||me === "reinforce" ||me === "review" ||me === "observationdetails" || me === "comments"
 					)
 				){
@@ -179,7 +179,7 @@ set arguments to values for ease of reading arguments
 		});
 
 		TP.ROUTER.on('route:positive route:negative', function(){
-			if(TP.OBDEFAULTS.type===null){
+			if(TP.DEFAULTS.type===null){
 				TP.pageLoad('new');
 			}else {
 				TP.VIEWS.observation.render(); // succeeds
@@ -196,7 +196,7 @@ set arguments to values for ease of reading arguments
 
 	details.forEach(function(me){
 		TP.ROUTER.on('route:'+me, function(){
-			if(TP.OBDEFAULTS.type===null){
+			if(TP.DEFAULTS.type===null){
 				TP.pageLoad('new');
 			}else {
 				TP.VIEWS.observationdetails.render(); // succeeds

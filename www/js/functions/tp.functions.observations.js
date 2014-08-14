@@ -4,7 +4,9 @@
  ==================================================
  */
 define([
+	'date'
 ], function () {
+	"use strict";
 
 	/*==================================================
 	Pbservation functions
@@ -18,7 +20,44 @@ define([
 				time: null,
 				comment: null,
 				vessel: null,
+				edit: false
 			}
+		},
+		reBuild:function(data) {
+
+			var item = JSON.parse(localStorage.pending)[data],
+				info = {};
+			info = {
+				type:item.type,
+				time: new Date(item.time),
+				comment: item.comment,
+				vessel: item.vessel,
+				edit: true,
+			};
+			this.buildList(item);
+			return info;
+		},
+		buildList: function(data){
+			//get the correct top level observations from localstorage
+			var observations = JSON.parse(data.observations);
+			//Now loop through all of the checklist's top level items
+			Object.keys(observations).forEach(function(me){
+				//now build each cetagory so we can work with them
+				var listItem = TP.CHECKLIST[data.type][me],
+					//take the previously selected observation items into one var
+					observationItem = observations[me];
+				//loop through every single individual possible observation if the top level item has been selected
+				Object.keys(listItem.details).forEach(function(him){
+					//now loop through each of the previously selected observation items from the old observation
+					Object.keys(observationItem).forEach(function(observationFromLocalStorage){
+						//if it has been selected make it = true
+						if(him===observationFromLocalStorage){
+							TP.CHECKLIST[data.type][me].state = true;
+							TP.CHECKLIST[data.type][me].details[observationFromLocalStorage] = true;
+						}
+					});
+				});
+			});
 		},
 		checkListDefault:function(){
 			return {

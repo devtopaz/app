@@ -37,7 +37,7 @@ define([
 					sessionStorage.removeItem('appOpenedFirstTime');
 					window.location.href = "#pinsave";
 				}else if(myself.currentPw.length === 4){
-					TP.message.showMessage('Sorry, your pins do not match', 'bad', 750);
+					TP.UI.message.showMessage('Sorry, your pins do not match', 'bad', 750);
 				}
 			}else{
 				if(valueReturned === "Forgot Pin?"){

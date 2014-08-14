@@ -12,16 +12,16 @@ define([
 	================================================== */
 	TP.save = {
 		saveToStoreage: function(data){
-			var tmpObject = {},
-				//stringData = '{"type":"positive","comment":"as","vessel":"Titanic","time":"2014-08-14 11:21:01Z","user":"22","pkey":"374ca085f7d86291ee3389fc5e2fd331"}',
-				//tmp = JSON.parse(stringData),
-				tempStorage = JSON.parse(localStorage.pending);
-			if(tmp){data = tmp};
+			var tmpObject = {};
+			if(localStorage.pending){
+				var tempStorage = JSON.parse(localStorage.pending);
+			}
 			if(typeof tempStorage === "object"){
 				tmpObject = tempStorage;
 			}
+
 			//write to an object if we do more than one observation without internet
-			tmpObject[tmp.time] = data;
+			tmpObject[data.time] = data;
 			localStorage.setItem('pending',JSON.stringify(tmpObject));
 			c(localStorage.pending)
 		},
@@ -35,8 +35,8 @@ define([
 		getCurrentlySelected: function(){
 			var myself = this,
 				data = {}
-			Object.keys(TP.CHECKLIST[TP.OBDEFAULTS.type]).forEach(function(me) {
-				var item = TP.CHECKLIST[TP.OBDEFAULTS.type][me];
+			Object.keys(TP.CHECKLIST[TP.DEFAULTS.type]).forEach(function(me) {
+				var item = TP.CHECKLIST[TP.DEFAULTS.type][me];
 				if (item.state === true) {
 					if(typeof data[me] !== "object") {
 						data[me] = {};
@@ -54,10 +54,10 @@ define([
 		prepareDataForSave: function(){
 			var myself = this,
 				data = {
-				type: TP.OBDEFAULTS.type,
-				comment: TP.OBDEFAULTS.comment,
-				vessel: TP.OBDEFAULTS.vessel,
-				time: TP.OBDEFAULTS.time.toString('u'),
+				type: TP.DEFAULTS.type,
+				comment: TP.DEFAULTS.comment,
+				vessel: TP.DEFAULTS.vessel,
+				time: TP.DEFAULTS.time.toString('u'),
 				user: localStorage.uid,
 				pkey: localStorage.pkey
 			};
@@ -68,7 +68,7 @@ define([
 		},
 		reset: function(){
 			TP.CHECKLIST = TP.OB.checkListDefault();
-			TP.OBDEFAULTS = TP.OB.defaults();
+			TP.DEFAULTS = TP.OB.defaults();
 		}
 	};
 
