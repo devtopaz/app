@@ -3896,7 +3896,7 @@ select.flat:focus {
 .error textarea, .error
 input, .error
 select {
-  background-color: #e74c3c;
+  background-color: #d30000;
   color: #FFF;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -3985,7 +3985,7 @@ select:focus {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000385}}
 label.error, label.error a {
-  background-color: #e74c3c;
+  background-color: #d30000;
   color: #FFF;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -4008,7 +4008,7 @@ label.error:focus, label.error a:focus {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000395}}
 .control-group label.error, .control-group label.error a {
-  background-color: #e74c3c;
+  background-color: #d30000;
   color: #FFF;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -4066,7 +4066,7 @@ label.error:focus, label.error a:focus {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003154}}
 .control-group.error > .input-icon, .control-group.error input + .input-icon {
-  color: #e74c3c;
+  color: #d30000;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003159}}
 .control-group.disabled > .input-icon, .control-group.disabled input + .input-icon {
@@ -4305,19 +4305,19 @@ overlay text {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000391}}
 .btn.btn-danger, a.btn.btn-danger {
   color: #FFF;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #e74c3c), color-stop(100%, #a82315));
-  background-image: -webkit-linear-gradient(top, #e74c3c 47%, #a82315 100%);
-  background-image: -moz-linear-gradient(top, #e74c3c 47%, #a82315 100%);
-  background-image: -o-linear-gradient(top, #e74c3c 47%, #a82315 100%);
-  background-image: linear-gradient(top, #e74c3c 47%, #a82315 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #d30000), color-stop(100%, #6d0000));
+  background-image: -webkit-linear-gradient(top, #d30000 47%, #6d0000 100%);
+  background-image: -moz-linear-gradient(top, #d30000 47%, #6d0000 100%);
+  background-image: -o-linear-gradient(top, #d30000 47%, #6d0000 100%);
+  background-image: linear-gradient(top, #d30000 47%, #6d0000 100%);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_mixins\.scss}line{font-family:\0000327}}
 .btn.btn-danger:hover, .btn.btn-danger:focus, .btn-group:focus .btn.btn-danger.dropdown-toggle, a.btn.btn-danger:hover, a.btn.btn-danger:focus, .btn-group:focus a.btn.btn-danger.dropdown-toggle {
-  background-image: #eb6f62;
+  background-image: #e97f7f;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_mixins\.scss}line{font-family:\0000332}}
 .btn.btn-danger:active, .btn-group.open .btn.btn-danger.dropdown-toggle, .btn.btn-danger.active, a.btn.btn-danger:active, .btn-group.open a.btn.btn-danger.dropdown-toggle, a.btn.btn-danger.active {
-  background-image: #c44033;
+  background-image: #2a0000;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_buttons\.scss}line{font-family:\0000395}}
 .btn.btn-success, a.btn.btn-success {
@@ -4489,11 +4489,12 @@ overlay text {
   padding: 15px 25px;
   font-size: 1.15rem;
   position: relative;
-  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: sanspro, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   border-radius: 4px;
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.51);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_bubble\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_bubble\.scss}line{font-family:\0000311}}
 .bubble.left:before, .bubble.right:before {
   content: ' ';
   position: absolute;
@@ -4504,12 +4505,18 @@ overlay text {
   border: 7px solid;
   border-color: #FFF transparent transparent #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_bubble\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_bubble\.scss}line{font-family:\0000321}}
 .bubble.right:before {
   left: auto;
   right: 30px;
   border-width: 20px 0 0 20px;
   border-color: #FFF transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_bubble\.scss}line{font-family:\0000327}}
+.bubble span {
+  color: #d30000;
+  font-weight: bold;
+  display: block;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\000032}}
@@ -4800,19 +4807,19 @@ overlay text {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\0000321}}
 .negative .header {
   color: #FFF;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #e74c3c), color-stop(100%, #a82315));
-  background-image: -webkit-linear-gradient(top, #e74c3c 47%, #a82315 100%);
-  background-image: -moz-linear-gradient(top, #e74c3c 47%, #a82315 100%);
-  background-image: -o-linear-gradient(top, #e74c3c 47%, #a82315 100%);
-  background-image: linear-gradient(top, #e74c3c 47%, #a82315 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(47%, #d30000), color-stop(100%, #6d0000));
+  background-image: -webkit-linear-gradient(top, #d30000 47%, #6d0000 100%);
+  background-image: -moz-linear-gradient(top, #d30000 47%, #6d0000 100%);
+  background-image: -o-linear-gradient(top, #d30000 47%, #6d0000 100%);
+  background-image: linear-gradient(top, #d30000 47%, #6d0000 100%);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_mixins\.scss}line{font-family:\0000327}}
 .negative .header:hover, .negative .header:focus, .btn-group:focus .negative .header.dropdown-toggle {
-  background-image: #eb6f62;
+  background-image: #e97f7f;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_mixins\.scss}line{font-family:\0000332}}
 .negative .header:active, .btn-group.open .negative .header.dropdown-toggle, .negative .header.active {
-  background-image: #c44033;
+  background-image: #2a0000;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\0000327}}
@@ -5339,11 +5346,11 @@ messagebox.good {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003307}}
 messagebox.bad {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e74c3c), color-stop(100%, #d62c1a));
-  background-image: -webkit-linear-gradient(#e74c3c, #d62c1a);
-  background-image: -moz-linear-gradient(#e74c3c, #d62c1a);
-  background-image: -o-linear-gradient(#e74c3c, #d62c1a);
-  background-image: linear-gradient(#e74c3c, #d62c1a);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d30000), color-stop(100%, #a00000));
+  background-image: -webkit-linear-gradient(#d30000, #a00000);
+  background-image: -moz-linear-gradient(#d30000, #a00000);
+  background-image: -o-linear-gradient(#d30000, #a00000);
+  background-image: linear-gradient(#d30000, #a00000);
   color: #FFF;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003311}}

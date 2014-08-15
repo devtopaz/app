@@ -47,13 +47,7 @@ define([
 		render: function () {
 
 			var data = {
-				gender: function(){
-					if(localStorage.gender==="0"){
-						return "male";
-					}else{
-						return "female";
-					}
-				}(),
+				rank: localStorage.rank,
 				regdate: localStorage.regdate,
 				fname: localStorage.fname,
 				sname: localStorage.sname,

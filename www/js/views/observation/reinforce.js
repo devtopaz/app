@@ -12,7 +12,11 @@ define([
 		template: JST['templates/observation/reinforce.ejs'],
 		render: function () {
 			this.$el.html(this.template());
-			TP.UI.setTitle('Reinforce Positive Behaviour');
+			if(TP.DEFAULTS.type==="positive") {
+				TP.UI.setTitle('Reinforce Positive Behaviour');
+			}else{
+				TP.UI.setTitle('Correct Negative Behaviours');
+			}
 		},
 	});
 	return reinforce;

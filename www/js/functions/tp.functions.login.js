@@ -5,7 +5,7 @@
  */
 define([
 ], function () {
-
+	"use strict";
 	/*==================================================
 	Login functions
 	================================================== */
@@ -18,6 +18,16 @@ define([
 			}else {
 				window.location.href = "#home";
 			}
+		},
+		buildLocalStorage: function(data){
+			Object.keys(data).forEach(function(key){
+				var me = data[key];
+				if(typeof me === "string"){ //If I'm a string then just add it to locastorage
+					localStorage.setItem(key,me);
+				}else if (typeof me === "object"){ //If we are an object then stringify if
+					localStorage.setItem(key,JSON.stringify(me));
+				}
+			});
 		},
 		doLogin: {
 			doAjax: function(values){
@@ -38,6 +48,7 @@ define([
 						}
 					},
 					success: function(data){
+						TP.login.buildLocalStorage(data);
 						TP.login.doLogin.success(data);
 					}
 				});
@@ -45,14 +56,6 @@ define([
 			},
 			success: function(data){
 				if(data.uid){
-					Object.keys(data).forEach(function(key){
-						var me = data[key];
-						if(typeof me === "string"){ //If I'm a string then just add it to locastorage
-							localStorage.setItem(key,me);
-						}else if (typeof me === "object"){ //If we are an object then stringify if
-							localStorage.setItem(key,JSON.stringify(me));
-						}
-					});
 					//we add a session marker to tell the pin view that we are coming from the login and don't display the pin
 					sessionStorage.setItem('blockpin',false);
 					//Now we load the home page

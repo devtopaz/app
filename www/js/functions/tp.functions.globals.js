@@ -56,6 +56,40 @@ Globals
 	TP.HASH = '';
 	TP.PREVIOUSHASH = '';
 	TP.VIEWS = {};
+	TP.VESSELS = [
+		'Addax',
+		'Amani',
+		'Captain',
+		'Commander',
+		'Faye',
+		'Fujairah',
+		'Installer',
+		'Johor',
+		'Jurong',
+		'Oryx',
+		'Seema',
+		'Sophie',
+		'Xara'
+	];
+	TP.RANKS = [
+		'Master',
+		'Chief Officer',
+		'Deck Officer',
+		'Chief Engineer',
+		'Engineering Officer',
+		'E.T.O.',
+		'Bosun',
+		'A.B. / Deckhand',
+		'Oiler / Motorman',
+		'Cadet / Trainee',
+		'Interpreter',
+		'Medical Staff',
+		'Galley Staff',
+		'Messman',
+		'Shore Management',
+		'Shore Staff',
+		'Other'
+	]
 	TP.ROUTER = false;
 
 // #Build up Stats for TP ------------------------------------------------------
@@ -132,24 +166,21 @@ TP.pageLoad = function(pageToLoad){
 /*==================================================
 Networking functions
 ================================================== */
-	TP.checkConnection = function () {
+	TP.checkConnection = function (){
 		var networkState = navigator.connection.type;
 
 		var states = {};
-		if(typeof Connection!=="undefined"){
-			states[Connection.UNKNOWN]  = 'Unknown connection';
-			states[Connection.ETHERNET] = 'Ethernet connection';
-			states[Connection.WIFI]     = 'WiFi connection';
-			states[Connection.CELL_2G]  = 'Cell 2G connection';
-			states[Connection.CELL_3G]  = 'Cell 3G connection';
-			states[Connection.CELL_4G]  = 'Cell 4G connection';
-			states[Connection.CELL]     = 'Cell generic connection';
-			states[Connection.NONE]     = 'No network connection';
-			c('Connection type: ' + states[networkState]);
-		}else{
-			c('Connection not ready yet');
-		}
-	};
+		states[Connection.UNKNOWN]  = 'Unknown connection';
+		states[Connection.ETHERNET] = 'Ethernet connection';
+		states[Connection.WIFI]     = 'WiFi connection';
+		states[Connection.CELL_2G]  = 'Cell 2G connection';
+		states[Connection.CELL_3G]  = 'Cell 3G connection';
+		states[Connection.CELL_4G]  = 'Cell 4G connection';
+		states[Connection.CELL]     = 'Cell generic connection';
+		states[Connection.NONE]     = 'No network connection';
+
+		alert('Connection type: ' + states[networkState]);
+	}
 
 	/*==================================================
 	Init for TP
@@ -177,7 +208,6 @@ Networking functions
 					document.body.appendChild(c);
 				}
 
-				TP.checkConnection();
 				//add phonegap debugging script
 				//var d = document.createElement('script');
 				//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");

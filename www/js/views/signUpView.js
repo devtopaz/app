@@ -61,6 +61,10 @@ define([
 						} else {
 							TP.UI.spinner.hideme();
 							TP.UI.message.showMessage(data.good);
+							if(data.good==="Details have been saved"){
+								//readd things to localStorage
+								TP.login.buildLocalStorage(values);
+							}
 							if($('.signup').html() !== "Done") {
 								myself.$el.html(myself.checkmail({email: values.email}));
 								TP.UI.setTitle('Sign Up Complete');
