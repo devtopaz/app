@@ -19,11 +19,10 @@ define([
 		template: JST['templates/observation/new.ejs'],
 		render: function () {
 			//reset everything for the fresh observation
-			TP.DEFAULTS = TP.OB.defaults();
+			TP.save.reset();
+
 			//set current Time
 			TP.DEFAULTS.time = new Date();
-
-			$('html').removeClass('positive').removeClass('negative');
 
 			this.$el.html(this.template());
 			TP.UI.setTitle('New Observation');

@@ -31,11 +31,24 @@ define([
 			checkABox: function(el){
 				var currentMe = $(el.currentTarget),
 					inputMe = currentMe.find('input'),
-					name = inputMe.attr('name');
-					inputMe.attr('checked', 'checked');
+					name = inputMe.attr('name'),
+					inputs = $('input[type=checkbox]');
+				//Do we tick the box or not
+				if(inputMe.prop('checked')===true){
+					inputMe.prop('checked', false);
+					TP.CHECKLIST[TP.DEFAULTS.type][TP.DEFAULTS.name].details[name] = false;
+					//loop through all of the inputs to see if any are unticked,
+					// if they are remove their value from TP.CHECKLIST
+					var isChecked = 0;
+					inputs.each(function(){
+						if($(this).prop('checked')===true) isChecked += 1;
+					});
+					if(isChecked===0) TP.CHECKLIST[TP.DEFAULTS.type][TP.DEFAULTS.name]['state'] = false;
+				}else {
+					inputMe.prop('checked', true);
 					TP.CHECKLIST[TP.DEFAULTS.type][TP.DEFAULTS.name]['state'] = true;
 					TP.CHECKLIST[TP.DEFAULTS.type][TP.DEFAULTS.name].details[name] = true;
-				//TP.save.prepareDataForSave()
+				}
 			},
 			loadPrevious: {
 				that: this,

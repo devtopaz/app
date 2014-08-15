@@ -11,6 +11,20 @@ define([
 	Login functions
 	================================================== */
 	TP.save = {
+		removeFromStorage: function(){
+			if(localStorage.pending){
+				var tempStorage = JSON.parse(localStorage.pending);
+				//remove item
+				delete tempStorage[TP.DEFAULTS.time.toString('u')];
+				if(Object.keys(tempStorage).length===0){
+					localStorage.removeItem('pending');
+				}else{
+					//finally resave to locastorage
+					localStorage.setItem('pending',JSON.stringify(tempStorage));
+				}
+			}
+			TP.save.reset();
+		},
 		saveToStoreage: function(data){
 			var tmpObject = {};
 			if(localStorage.pending){
@@ -23,7 +37,9 @@ define([
 			//write to an object if we do more than one observation without internet
 			tmpObject[data.time] = data;
 			localStorage.setItem('pending',JSON.stringify(tmpObject));
-			c(localStorage.pending)
+
+			//Now everything has been saved to local storage wipe everything
+			TP.save.reset();
 		},
 		convertObservation: function(name){
 			var tmpName;
@@ -52,8 +68,7 @@ define([
 			return data;
 		},
 		prepareDataForSave: function(){
-			var myself = this,
-				data = {
+			var data = {
 				type: TP.DEFAULTS.type,
 				comment: TP.DEFAULTS.comment,
 				vessel: TP.DEFAULTS.vessel,
@@ -63,12 +78,12 @@ define([
 			};
 
 			data.observations = JSON.stringify(this.getCurrentlySelected());
-			c(data);
 			return data;
 		},
 		reset: function(){
 			TP.CHECKLIST = TP.OB.checkListDefault();
 			TP.DEFAULTS = TP.OB.defaults();
+			$('html').removeClass('positive').removeClass('negative');
 		}
 	};
 

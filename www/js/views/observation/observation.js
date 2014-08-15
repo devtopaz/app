@@ -4,7 +4,7 @@ define([
     'use strict';
 
 	//set up homeview
-    var observation = TP.defaultObservationView.extend({
+    var observation = TP.defaultView.extend({
 		render: function () {
 			TP.DOV.render();
 

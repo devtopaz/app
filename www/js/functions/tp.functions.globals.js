@@ -213,7 +213,7 @@ Networking functions
 		});
 		$( document ).ajaxError(function( event, request, settings ) {
 			TP.UI.spinner.hideme();
-			TP.UI.message.showMessage('An error occured, sorry', 'bad', 1000);
+			//TP.UI.message.showMessage('An error occured, sorry', 'bad', 1000);
 		});
 	};
 });
