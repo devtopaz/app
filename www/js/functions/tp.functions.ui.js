@@ -83,8 +83,13 @@ define([
 	$('messageBox').on('click', TP.UI.message.hideMessage);
 
 	TP.changeHeightofContent = function(){
-		TP.pageHeight = $('body').outerHeight() - $('.header').outerHeight();
-		$('page').css({height:TP.pageHeight});
+		var header = $('.header');
+		if(header.is('visible')) {
+			TP.pageHeight = $('body').outerHeight() - header.outerHeight();
+		}else{
+			TP.pageHeight = $('body').outerHeight();
+		}
+		$('page').css({height: TP.pageHeight});
 	};
 
 	return TP;
