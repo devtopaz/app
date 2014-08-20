@@ -40,6 +40,9 @@ define([
 			'pinsave' : 'pinsave',
 			'pin' : 'pin',
 
+			//No Internet Connection
+			'notactive': 'notactive',
+
         }
     });
 

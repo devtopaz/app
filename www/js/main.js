@@ -103,6 +103,9 @@ require([
 		'views/observation/failed',
 		'views/observation/pending',
 
+// No Internet Connection--------------
+		'views/notactive',
+
 // Functions -----------------------
 		'tp',
 		'tpl',
@@ -122,7 +125,7 @@ set arguments to values for ease of reading arguments
         Router = arguments[2],
 		IndexView = arguments[3],
 		HomeView = arguments[4],
-		TP = arguments[28],
+		TP = arguments[29],
 		myself = arguments;
 
 	/*==================================================
@@ -161,6 +164,7 @@ set arguments to values for ease of reading arguments
 		names[18] = 'success';
 		names[19] = 'failed';
 		names[20] = 'pending';
+		names[21] = 'notactive';
 		var myArgs = myself;
 
 		names.forEach(function(me, key){
