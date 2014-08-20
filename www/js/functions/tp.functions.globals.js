@@ -160,7 +160,6 @@ TP.pageLoad = function(pageToLoad){
 	}else{
 //			c('Nothing was given in the pageLoad');
 	}
-c(useme);
 	//Update the current view, don't re-redner it
 	TP.ROUTER.navigate(useme, true);
 };

@@ -84,7 +84,7 @@ define([
 
 	TP.changeHeightofContent = function(){
 		var header = $('.header');
-		if(header.is('visible')) {
+		if(header.is(':visible')) {
 			TP.pageHeight = $('body').outerHeight() - header.outerHeight();
 		}else{
 			TP.pageHeight = $('body').outerHeight();

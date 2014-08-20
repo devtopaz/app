@@ -76,7 +76,7 @@ define([
 					dataType: "json",
 					data: {
 						'ierihias': localStorage.uid,
-						'adfbse4': localStorage.privateKey
+						'adfbse4': localStorage.pkey
 					},
 					error: function (data) {
 						if (TP.login.checkPrivateKey.numberOfTrys === 0) {

@@ -12,6 +12,10 @@ define([
 		changeItem: function(el){
 			TP.DEFAULTS.vessel = $(el.currentTarget).val();
 			$('.new .hide').removeClass('hide');
+			//document.querySelector('page').scrollTop = 300;
+			$('page').animate({
+				scrollTop: 300
+			}, 1000);
 		},
 		openType: function(el){
 			TP.DEFAULTS.type = $(el.currentTarget).data('type');

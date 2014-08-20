@@ -14,7 +14,6 @@ define([
 			'click .checkagain': 'checkAgain',
 		},
 		checkAgain: function (){
-			c('as');
 			TP.checkConnection();
 			if(TP.CONNECTION !== "none"){
 				TP.UI.spinner.showme('Checking for you...', 'Waiting...', true);

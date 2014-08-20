@@ -33,7 +33,7 @@ define([
 				if(myself.currentPw.length === 4 && myself.currentPw === localStorage.pinNumber){
 					TP.login.checkPrivateKey.makeCall();
 				}else if (myself.currentPw.length === 4){
-					TP.message.showMessage('Pin incorrect', 'bad', 1000);
+					TP.UI.message.showMessage('Pin incorrect', 'bad', 1000);
 					pinInputs.removeAttr('class');
 					myself.currentPw = '';
 				}

@@ -5001,6 +5001,7 @@ observation input[type=checkbox] {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003155}}
 .review .reviewBox ul li:before, .review .reviewBox .comment li:before {
   content: "·";
+  font-family: sanspro;
   font-size: 5.1rem;
   vertical-align: middle;
   line-height: .9rem;
