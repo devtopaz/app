@@ -202,10 +202,10 @@ Networking functions
 
 		TP.globals(); //set up our global variables
 
-		TP.login.lookIfWeNeedPin();
 		//Set up scripts to get loaded depending on envoiment
 		if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
 			if(!TP.WEBSITE) {
+				TP.login.lookIfWeNeedPin();
 
 				//load in cordova.js if its not already there
 				if (typeof cordova === "undefined") {

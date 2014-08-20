@@ -3829,6 +3829,10 @@ select {
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+  line-height: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cccccc));
+  -webkit-box-shadow: 1px 1px 1px #fff;
+  -webkit-border-radius: 0.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_mixins\.scss}line{font-family:\0000312}}
 textarea:-moz-placeholder,
@@ -3848,7 +3852,7 @@ input.placeholder,
 select.placeholder {
   color: #95a5a6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000341}}
 textarea.searching,
 input.searching,
 select.searching {
@@ -3856,7 +3860,7 @@ select.searching {
   background-repeat: no-repeat;
   background-position: 98% center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000350}}
 .control-group.focus textarea, textarea:focus, .control-group.focus
 input,
 input:focus, .control-group.focus
@@ -3867,32 +3871,32 @@ select:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000356}}
 .row-fluid textarea, .row-fluid
 input, .row-fluid
 select {
   height: 41px;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000362}}
 textarea.flat,
 input.flat,
 select.flat {
   border-color: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000364}}
 textarea.flat:hover,
 input.flat:hover,
 select.flat:hover {
   border-color: #605f5b;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000367}}
 textarea.flat:focus,
 input.flat:focus,
 select.flat:focus {
   border-color: #6cb7b4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000374}}
 .error textarea, .error
 input, .error
 select {
@@ -3928,7 +3932,7 @@ input.placeholder, .error
 select.placeholder {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000378}}
 textarea.success,
 input.success,
 select.success {
@@ -3946,7 +3950,7 @@ select.success:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000381}}
 textarea.warning,
 input.warning,
 select.warning {
@@ -3964,7 +3968,7 @@ select.warning:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000384}}
 .control-group.info textarea, .control-group.info
 input, .control-group.info
 select {
@@ -3983,7 +3987,7 @@ select:focus {
   box-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000391}}
 label.error, label.error a {
   background-color: #d30000;
   color: #FFF;
@@ -3998,15 +4002,15 @@ label.error:focus, label.error a:focus {
   box-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000397}}
 .control-group {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000399}}
 .control-group label {
   font-size: .8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003101}}
 .control-group label.error, .control-group label.error a {
   background-color: #d30000;
   color: #FFF;
@@ -4020,7 +4024,7 @@ label.error:focus, label.error a:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003105}}
 .control-group > .input-icon {
   position: absolute;
   top: 2px;
@@ -4038,43 +4042,43 @@ label.error:focus, label.error a:focus {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003118}}
 .control-group input:focus + .input-icon {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003127}}
 .control-group.huge > .input-icon {
   line-height: 49px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003134}}
 .control-group.large > .input-icon {
   line-height: 41px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003141}}
 .control-group.small > .input-icon {
   font-size: 20.556px;
   /* 16px */
   line-height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003150}}
 .control-group.success > .input-icon, .control-group.success input + .input-icon {
   color: #86c555;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003155}}
 .control-group.warning > .input-icon, .control-group.warning input + .input-icon {
   color: #f1c40f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003160}}
 .control-group.error > .input-icon, .control-group.error input + .input-icon {
   color: #d30000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003165}}
 .control-group.disabled > .input-icon, .control-group.disabled input + .input-icon {
   color: #d4dbdb;
   background-color: #f4f6f6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003178}}
 input[disabled],
 textarea[disabled],
 select[disabled],
@@ -4085,7 +4089,7 @@ textarea[readonly] {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003186}}
 textarea {
   height: auto;
   font-size: 19.278px;
@@ -4094,13 +4098,13 @@ textarea {
   padding: 5px 11px;
   text-indent: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003193}}
 .row-fluid textarea {
   height: auto;
   width: 100% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003199}}
 textarea[class*="span"] {
   width: 100% !important;
   -webkit-box-sizing: border-box;
@@ -4108,20 +4112,20 @@ textarea[class*="span"] {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003204}}
 select {
   padding-left: 0;
   color: #95a5a6;
   text-indent: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003210}}
 input[type=checkbox] {
   padding: 6px;
   display: inline-block;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/modules\/_input\.scss}line{font-family:\00003214}}
 input[type=checkbox]:checked {
   background: #000;
 }
