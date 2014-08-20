@@ -41,7 +41,7 @@ define([
 				}
 			}else{
 				if(valueReturned === "Forgot Pin?"){
-					TP.UI.Dialog('Pin Reset?', 'I just hope that you are resetting because of a typeo.', ['Cancl', 'Yes, Reset'], function(){
+					TP.UI.Dialog('Pin Reset?', 'I would like to reset my pin code.', ['Cancel', 'Yes, Reset'], function(){
 						sessionStorage.clear();
 						TP.VIEWS.setpinView.currentPw = "";
 						myself.currentPw = "";

@@ -91,11 +91,13 @@ define([
 				});
 			},
 			makeCall: function () {
+				TP.checkConnection();
 				if (TP.CONNECTION === "none") {
-					TP.login.success();
-					c('no internet');
+					TP.UI.Dialog('No Internet', 'Please be aware that any logs made at this time will not be sent to the database until you have an active internet connection', ['Get me out of here', 'I understand'], function(){
+						TP.login.moveToHome();
+						TP.UI.spinner.hideme();
+					}, 'confirm')
 				} else {
-					c('internet');
 					TP.UI.spinner.showme('Security Checks', 'Looking up');
 					TP.login.checkPrivateKey.doAjax();
 				}
