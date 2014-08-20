@@ -81,21 +81,25 @@ define([
 							TP.login.checkPrivateKey.numberOfTrys = 1;
 							TP.login.checkPrivateKey.doAjax();
 						}else{
-							TP.message.showMessage('There was a network error. Please try again.', 'bad');
-							TP.spinner.hideme();
+							TP.UI.message.showMessage('There was a network error. Please try again.', 'bad');
+							TP.UI.spinner.hideme();
 						}
 					},
 					success: TP.login.checkPrivateKey.success
 				});
 			},
 			makeCall: function(){
-				TP.UI.spinner.showme('Security Checks', 'Looking up');
-				TP.login.checkPrivateKey.doAjax();
+				if(TP.CONNECTION==="none"){
+					TP.login.success();
+				}else {
+					TP.UI.spinner.showme('Security Checks', 'Looking up');
+					TP.login.checkPrivateKey.doAjax();
+				}
 			},
 			success: function(data){
 				if(data.current==="1"){
 					TP.login.moveToHome();
-					TP.spinner.hideme();
+					TP.UI.spinner.hideme();
 				}else{
 					TP.UI.Dialog('Private Session Key has expired.', 'This is often from logging on a different device. We will log you out for security.');
 					//alert('You have logged in somewhere else since using this app. For security we\'ll need to log you out, please log back in after.');

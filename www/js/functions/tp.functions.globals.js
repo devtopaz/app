@@ -182,7 +182,7 @@ Networking functions
 
 			//alert('Connection type: ' + states[networkState]);
 
-			if (TP.CONNECTION !== "none" && TP.HASH!=="notactive") {
+			if (TP.CONNECTION !== "none" && TP.HASH!=="notactive" && localStorage.getItem('uid') !== null) {
 				TP.pageLoad('notactive');
 			};
 		}
@@ -199,8 +199,8 @@ Networking functions
 		TP.globals(); //set up our global variables
 
 		//Set up scripts to get loaded depending on envoiment
-		if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
-			if(!TP.WEBSITE) {
+		//if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
+		//	if(!TP.WEBSITE) {
 				//This checker will active when the app is closed, on repoen this gets set and user has to enter their pin number
 				if (typeof sessionStorage.blockpin === "undefined") {
 					sessionStorage.setItem('appOpenedFirstTime', true);
@@ -208,20 +208,20 @@ Networking functions
 				sessionStorage.removeItem('blockpin');
 
 				//load in cordova.js if its not already there
-				if (typeof cordova === "undefined") {
-					var c = document.createElement('script');
-					c.setAttribute("src", "cordova.js");
-					document.body.appendChild(c);
-				}
+				//if (typeof cordova === "undefined") {
+				//	var c = document.createElement('script');
+				//	c.setAttribute("src", "cordova.js");
+				//	document.body.appendChild(c);
+				//}
 
 				//add phonegap debugging script
 				//var d = document.createElement('script');
 				//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
 				//document.getElementsByTagName('body')[0].appendChild(d);
-			}
-		}else{
+			//}
+		//}else{
 			$.getScript('http://localhost:35729/livereload.js');
-		}
+		//}
 
 		//Set up hash change for every time it changes
 		TP.globalEvents.onHashChange();
