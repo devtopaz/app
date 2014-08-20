@@ -11,33 +11,16 @@ define([
     var notActive = TP.defaultView.extend({
 		el: 'page',
 		events: {
-			'submit .loginForm ': 'logUserIn',
+			'click .checkagain': 'checkAgain',
 		},
-        template: JST['templates/index.ejs'],
-		logUserIn: function (el) {
-
-			var me = $(el.currentTarget),
-				values = me.serializeObject(),
-				noerror = true;
-
-			//check for all errors
-			me.find('.error').removeClass('error');
-
-			//add errors
-			if(values.email === ""){
-				$('#email').parent().addClass('error');
-				noerror = false;
-			}
-			if(values.pword === ""){
-				$('#pword').parent().addClass('error');
-				noerror = false;
-			}
-
-			if(noerror){
-				TP.login.doLogin.doAjax(values);
-			}
-			return false;
+		checkagain: function (){
+			c('as');
+			TP.checkConnection();
+			if(TP.CONNECTION !== "none"){
+				TP.UI.spinner.showme('Checking for you...', 'Waiting...', true);
+			};
 		},
+        template: JST['templates/notactive.ejs'],
         render: function () {
             this.$el.html(this.template);
         }
