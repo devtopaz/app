@@ -10,6 +10,9 @@ define([
 	TP.globalEvents = {};
 
 	TP.globalEvents.onHashChange = function(){
+		//Firstly check we have a valid internet connection
+		TP.checkConnection();
+
 		//make sure we are logged in, if we are not forward back to home page
 		TP.login.checkLoginState();
 

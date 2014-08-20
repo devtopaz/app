@@ -239,7 +239,6 @@ On Device Ready
 		document.addEventListener("deviceready", function(){
 			runEverthing();
 			Backbone.history.start();
-			TP.checkConnection();
 		}, true);
 	}else{
 		$(document).ready(function() {
