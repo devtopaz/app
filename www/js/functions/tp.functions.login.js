@@ -91,7 +91,9 @@ define([
 			makeCall: function(){
 				if(TP.CONNECTION==="none"){
 					TP.login.success();
+					c('no internet');
 				}else {
+					c('internet');
 					TP.UI.spinner.showme('Security Checks', 'Looking up');
 					TP.login.checkPrivateKey.doAjax();
 				}
