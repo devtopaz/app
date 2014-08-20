@@ -4781,7 +4781,6 @@ overlay text {
   margin-top: 20px;
   font-size: 1.5rem;
   font-family: sanspro;
-  color: #a2c8df;
   display: block;
   line-height: 1.4rem;
 }
@@ -5302,7 +5301,7 @@ shell content .bottomnavigation a:last-child {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003280}}
-.selector .header, .forgotten .header, .home .header, .notactive .header {
+.selector .header, .forgotten .header, .home .header, .notactive .header, .pinsave .header {
   display: none;
 }
 
