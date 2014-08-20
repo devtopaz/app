@@ -4997,21 +4997,8 @@ observation input[type=checkbox] {
   padding: 6px 0;
   text-align: left;
   font-weight: bold;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003155}}
-.review .reviewBox ul li:before, .review .reviewBox .comment li:before {
-  content: "·";
-  font-family: sanspro;
-  font-size: 5.1rem;
-  vertical-align: middle;
-  line-height: .9rem;
-  text-align: left;
-  height: 10px;
-  display: inline-block;
-  width: 20px;
-  padding: 0;
-  margin: 0;
-  color: #9c9d9e;
+  list-style: disc;
+  margin-left: 17px;
 }
 
 /*

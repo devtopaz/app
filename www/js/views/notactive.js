@@ -15,8 +15,12 @@ define([
 		},
 		checkAgain: function (){
 			TP.checkConnection();
-			if(TP.CONNECTION !== "none"){
-				TP.UI.spinner.showme('Checking for you...', 'Waiting...', true);
+			c(TP.CONNECTION);
+			if(TP.CONNECTION === "none"){
+				TP.UI.Dialog('No Internet', 'Please try again when you have internet', ['Cancel', 'Ok'], function(){
+					TP.save.removeFromStorage();
+					TP.pageLoad('home');
+				}, 'confirm');
 			};
 		},
         template: JST['templates/notactive.ejs'],

@@ -19,30 +19,36 @@ define([
 		},
 		submitObservation: function(el){
 			var dataToSend = TP.save.prepareDataForSave();
-
-			$.ajax({
-				url: TP.AJAX + 'users/addobservation',
-				type: 'POST',
-				dataType: 'json',
-				data: dataToSend,
-				error: function (data) {
-					TP.save.saveToStoreage(dataToSend);
-					TP.pageLoad('failed');
-					TP.UI.spinner.hideme();
-				},
-				success: function (data) {
-					//TODO display the error
-					if (data.error) {
-						TP.UI.spinner.hideme();
+			TP.checkConnection();
+			if(TP.CONNECTION!=="none") {
+				$.ajax({
+					url: TP.AJAX + 'users/addobservation',
+					type: 'POST',
+					dataType: 'json',
+					data: dataToSend,
+					error: function (data) {
 						TP.save.saveToStoreage(dataToSend);
 						TP.pageLoad('failed');
-					} else {
 						TP.UI.spinner.hideme();
-						TP.save.removeFromStorage();
-						TP.pageLoad('success');
+					},
+					success: function (data) {
+						//TODO display the error
+						if (data.error) {
+							TP.UI.spinner.hideme();
+							TP.save.saveToStoreage(dataToSend);
+							TP.pageLoad('failed');
+						} else {
+							TP.UI.spinner.hideme();
+							TP.save.removeFromStorage();
+							TP.pageLoad('success');
+						}
 					}
-				}
-			});
+				});
+			}else{
+				TP.save.saveToStoreage(dataToSend);
+				TP.pageLoad('failed');
+				TP.UI.spinner.hideme();
+			}
 		},
 		render: function () {
 			this.$el.html(this.template());

@@ -183,7 +183,7 @@ Networking functions
 			//alert('Connection type: ' + states[networkState]);
 
 			if (
-				TP.CONNECTION !== "none" && localStorage.getItem('uid') !== null
+				TP.CONNECTION === "none" && localStorage.getItem('uid') !== null
 				&& TP.HASH!=="notactive"
 				&& TP.HASH!=="pin"
 				) {
@@ -203,10 +203,10 @@ Networking functions
 		TP.globals(); //set up our global variables
 
 		TP.login.lookIfWeNeedPin();
-
 		//Set up scripts to get loaded depending on envoiment
 		if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
 			if(!TP.WEBSITE) {
+
 				//load in cordova.js if its not already there
 				if (typeof cordova === "undefined") {
 					var c = document.createElement('script');
