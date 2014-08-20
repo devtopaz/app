@@ -89,7 +89,7 @@ define([
 				});
 			},
 			makeCall: function(){
-				TP.spinner.showme('Security Checks', 'Looking up');
+				TP.UI.spinner.showme('Security Checks', 'Looking up');
 				TP.login.checkPrivateKey.doAjax();
 			},
 			success: function(data){
