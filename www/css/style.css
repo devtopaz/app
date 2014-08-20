@@ -4569,7 +4569,7 @@ overlay text {
 .selector p, .forgotten p, .home p {
   font-size: 1.3em;
   line-height: 1.3em;
-  margin: 22px 0;
+  margin: 15px 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\0000344}}
 .selector p.safteynotice, .forgotten p.safteynotice, .home p.safteynotice {
@@ -4615,7 +4615,7 @@ overlay text {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\0000374}}
 .selector #email, .forgotten #email, .home #email {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\0000380}}
