@@ -239,6 +239,8 @@ On Device Ready
 		document.addEventListener("deviceready", function(){
 			runEverthing();
 			Backbone.history.start();
+			//Now check we have a valid internet connection
+			TP.checkConnection();
 		}, true);
 	}else{
 		$(document).ready(function() {

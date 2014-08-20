@@ -160,7 +160,7 @@ TP.pageLoad = function(pageToLoad){
 	}else{
 //			c('Nothing was given in the pageLoad');
 	}
-
+c(useme);
 	//Update the current view, don't re-redner it
 	TP.ROUTER.navigate(useme, true);
 };
@@ -183,8 +183,12 @@ Networking functions
 
 			//alert('Connection type: ' + states[networkState]);
 
-			if (TP.CONNECTION !== "none" && TP.HASH!=="notactive" && localStorage.getItem('uid') !== null) {
-				TP.pageLoad('notactive');
+			if (
+				TP.CONNECTION !== "none" && localStorage.getItem('uid') !== null
+				&& TP.HASH!=="notactive"
+				&& TP.HASH!=="pin"
+				) {
+				TP.ROUTER.navigate('notactive', true);
 			};
 		}
 	}
@@ -199,30 +203,26 @@ Networking functions
 
 		TP.globals(); //set up our global variables
 
-		//Set up scripts to get loaded depending on envoiment
-		//if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
-		//	if(!TP.WEBSITE) {
-				//This checker will active when the app is closed, on repoen this gets set and user has to enter their pin number
-				if (typeof sessionStorage.blockpin === "undefined") {
-					sessionStorage.setItem('appOpenedFirstTime', true);
-				}
-				sessionStorage.removeItem('blockpin');
+		TP.login.lookIfWeNeedPin();
 
+		//Set up scripts to get loaded depending on envoiment
+		if(TP.isMobile || TP.ENVIROMENT==="liveApp"){
+			if(!TP.WEBSITE) {
 				//load in cordova.js if its not already there
-				//if (typeof cordova === "undefined") {
-				//	var c = document.createElement('script');
-				//	c.setAttribute("src", "cordova.js");
-				//	document.body.appendChild(c);
-				//}
+				if (typeof cordova === "undefined") {
+					var c = document.createElement('script');
+					c.setAttribute("src", "cordova.js");
+					document.body.appendChild(c);
+				}
 
 				//add phonegap debugging script
 				//var d = document.createElement('script');
 				//d.setAttribute("src","http://debug.build.phonegap.com/target/target-script-min.js#hutber");
 				//document.getElementsByTagName('body')[0].appendChild(d);
-			//}
-		//}else{
+			}
+		}else{
 			$.getScript('http://localhost:35729/livereload.js');
-		//}
+		}
 
 		//Set up hash change for every time it changes
 		TP.globalEvents.onHashChange();
