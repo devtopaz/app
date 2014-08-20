@@ -13,7 +13,7 @@ define([
 		events: {
 			'click .checkagain': 'checkAgain',
 		},
-		checkagain: function (){
+		checkAgain: function (){
 			c('as');
 			TP.checkConnection();
 			if(TP.CONNECTION !== "none"){

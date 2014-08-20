@@ -4652,6 +4652,17 @@ overlay text {
   z-index: 2;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_loginsignup\.scss}line{font-family:\00003108}}
+.notactive {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_pins\.scss}line{font-family:\000032}}
 .pin page, .setpin page, .confirmpin page, .pinsave page {
   padding: 0;
@@ -5301,7 +5312,7 @@ shell content .bottomnavigation a:last-child {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003280}}
-.selector .header, .forgotten .header, .home .header {
+.selector .header, .forgotten .header, .home .header, .notactive .header {
   display: none;
 }
 
