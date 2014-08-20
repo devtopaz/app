@@ -53,6 +53,7 @@ Globals
 	TP.CURRENTLOG = 'na';
 	TP.DEFAULTS = TP.OB.defaults();
 	TP.CHECKLIST = TP.OB.checkListDefault();
+	TP.CONNECTION = null;
 	TP.HASH = '';
 	TP.PREVIOUSHASH = '';
 	TP.VIEWS = {};
