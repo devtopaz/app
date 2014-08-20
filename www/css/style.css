@@ -3831,8 +3831,6 @@ select {
   transition: 0.25s;
   line-height: 1.2em;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cccccc));
-  -webkit-box-shadow: 1px 1px 1px #fff;
-  -webkit-border-radius: 0.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/_mixins\.scss}line{font-family:\0000312}}
 textarea:-moz-placeholder,
