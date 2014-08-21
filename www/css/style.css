@@ -4959,7 +4959,7 @@ observation input[type=checkbox] {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003118}}
 .observationselector li div input, .detailsbox li div input {
   display: block;
-  margin: 0;
+  margin: 3px 0 0 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003123}}
 .observationselector li span, .detailsbox li span {
@@ -5214,7 +5214,7 @@ shell content page {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 0 5%;
+  padding: 0 5% 25px 5%;
   *zoom: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Program\%20Files\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.3\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
