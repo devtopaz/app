@@ -4958,33 +4958,51 @@ observation input[type=checkbox] {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003118}}
 .observationselector li div input, .detailsbox li div input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: block;
   margin: 3px 0 0 0;
+  border: 2px #569bc5 solid;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fffcfc), color-stop(50%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #fffcfc 0%, #ffffff 50%);
+  background-image: -moz-linear-gradient(top, #fffcfc 0%, #ffffff 50%);
+  background-image: -o-linear-gradient(top, #fffcfc 0%, #ffffff 50%);
+  background-image: linear-gradient(top, #fffcfc 0%, #ffffff 50%);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003127}}
+.observationselector li div input:checked, .detailsbox li div input:checked {
+  background: #569bc5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003132}}
 .observationselector li span, .detailsbox li span {
   margin-left: 7%;
   width: 90%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003141}}
 .review .time {
   font-weight: bold;
   font-size: 1.85rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003145}}
 .review .deleteObservation {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003148}}
 .review .submitObservation {
   width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003152}}
 .review .edit .btn {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003155}}
 .review .edit .deleteObservation {
   width: 44.44444%;
   float: left;
@@ -4992,7 +5010,7 @@ observation input[type=checkbox] {
   display: inline;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003159}}
 .review .edit .submitObservation {
   width: 44.44444%;
   float: right;
@@ -5001,7 +5019,7 @@ observation input[type=checkbox] {
   display: inline;
   width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003164}}
 .review .reviewBox {
   padding: 0 20px 10px;
   background: #fff;
@@ -5011,7 +5029,7 @@ observation input[type=checkbox] {
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.51);
   margin-bottom: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003171}}
 .review .reviewBox h3 {
   color: #003768;
   text-shadow: none;
@@ -5019,14 +5037,14 @@ observation input[type=checkbox] {
   font-size: 1.4rem;
   font-family: sansprolight;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003178}}
 .review .reviewBox ul, .review .reviewBox .comment {
   border-top: 1px solid #cfd0d1;
   border-bottom: 1px solid #cfd0d1;
   padding: 10px 0;
   margin: 10px auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/pages\/_observation\.scss}line{font-family:\00003183}}
 .review .reviewBox ul li, .review .reviewBox .comment li {
   padding: 6px 0;
   text-align: left;
@@ -5353,11 +5371,11 @@ shell content .bottomnavigation a:last-child {
   background-image: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 50%);
   background-image: -o-linear-gradient(top, #e0e0e0 0%, #ffffff 50%);
   background-image: linear-gradient(top, #e0e0e0 0%, #ffffff 50%);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003305}}
 .positive .negative .pagination .circle.selected, .positive .positive .pagination .circle.selected, .positive .reinforce .pagination .circle.selected, .positive .review .pagination .circle.selected, .positive .comments .pagination .circle.selected, .positive .procedures .pagination .circle.selected, .positive .preparation .pagination .circle.selected, .positive .lineoffire .pagination .circle.selected, .positive .ppe .pagination .circle.selected, .positive .tools .pagination .circle.selected {
