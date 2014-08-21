@@ -54,6 +54,7 @@ Globals
 	TP.DEFAULTS = TP.OB.defaults();
 	TP.CHECKLIST = TP.OB.checkListDefault();
 	TP.CONNECTION = null;
+	TP.PAGINATION = 1;
 	TP.HASH = '';
 	TP.PREVIOUSHASH = '';
 	TP.VIEWS = {};

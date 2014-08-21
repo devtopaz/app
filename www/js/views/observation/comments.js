@@ -16,6 +16,7 @@ define([
 		render: function () {
 			this.$el.html(this.template());
 			TP.UI.setTitle('Comments');
+			TP.OB.setPagination(3);
 		},
 	});
 	return comments;

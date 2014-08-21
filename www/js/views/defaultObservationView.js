@@ -61,6 +61,7 @@ define([
 				//update the website with the current view
 				var compiled = this.template();
 				this.$el.html(compiled);
+				TP.OB.setPagination(1);
 
 				//Update generated html with new updated details
 				this.loadPrevious.pre();

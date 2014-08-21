@@ -17,6 +17,7 @@ define([
 			}else{
 				TP.UI.setTitle('Correct Negative Behaviours');
 			}
+			TP.OB.setPagination(2);
 		},
 	});
 	return reinforce;

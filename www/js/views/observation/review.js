@@ -53,6 +53,7 @@ define([
 		render: function () {
 			this.$el.html(this.template());
 			TP.UI.setTitle('Review');
+			TP.OB.setPagination(4);
 		},
 	});
 	return newNew;

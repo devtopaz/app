@@ -59,6 +59,16 @@ define([
 				});
 			});
 		},
+		setPagination: function(howMany){
+			var happened = 0;
+			$('.pagination .circle').each(function(){
+				$(this).removeClass('selected');
+				if(happened<howMany){
+					$(this).addClass('selected');
+				}
+				happened += 1;
+			});
+		},
 		checkListDefault:function(){
 			return {
 				positive: TP.OB.checkList.positive(),
