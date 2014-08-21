@@ -69,6 +69,9 @@ define([
 				this.loadPrevious.post();
 				//Remove Classes and then readd them
 				$('html').removeClass('positive').removeClass('negative').addClass(TP.DEFAULTS.type);
+				$('page').animate({
+					scrollTop: 0
+				}, 500);
 			}
 		});
 

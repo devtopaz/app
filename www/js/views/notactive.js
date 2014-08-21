@@ -15,7 +15,6 @@ define([
 		},
 		checkAgain: function (){
 			TP.checkConnection();
-			c(TP.CONNECTION);
 			if(TP.CONNECTION === "none"){
 				TP.UI.Dialog('No Internet', 'Please try again when you have internet', ['Cancel', 'Ok'], function(){
 					TP.save.removeFromStorage();
