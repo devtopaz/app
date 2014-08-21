@@ -5309,8 +5309,8 @@ shell content .bottomnavigation a:last-child {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/var\/www\/topaz\/sass\/style\.scss}line{font-family:\00003296}}
 .negative .pagination .circle, .positive .pagination .circle, .reinforce .pagination .circle, .review .pagination .circle, .comments .pagination .circle, .procedures .pagination .circle, .preparation .pagination .circle, .lineoffire .pagination .circle, .ppe .pagination .circle, .tools .pagination .circle {
-  height: 100%;
-  width: 20%;
+  height: 14px;
+  width: 14px;
   border: 2px #FFF solid;
   margin-right: 5%;
   display: block;
