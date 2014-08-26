@@ -19,6 +19,10 @@ define([
             this.$el.html(this.template);
 			TP.UI.setTitle('Sign Up');
         },
+		validateEmail: function (email) {
+			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return re.test(email);
+		},
 		signupForm: function (el) {
 			var me = $(el.currentTarget),
 				values = me.serializeObject(),
@@ -26,7 +30,6 @@ define([
 				myself = this;
 			//check for all errors
 			me.find('.error').removeClass('error');
-
 			Object.keys(values).forEach(function(item){
 				var element = values[item];
 				if(element.length===0){
@@ -34,6 +37,11 @@ define([
 					noerror = false;
 				}
 			});
+			if(this.validateEmail(values.email)!==true && values.email.length>0){
+				TP.UI.Dialog('Email Address', 'Please enter a valid email address');
+				$('input[name=email]').parent().addClass('error');
+				noerror = false;
+			}
 
 			if(noerror){
 				TP.UI.spinner.showme();
