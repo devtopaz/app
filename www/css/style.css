@@ -4904,7 +4904,7 @@ observation li {
   font-family: sanspro;
   padding: 10px 15px;
   margin-bottom: 15px;
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px !important;
   border-radius: 4px;
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.51);
 }

@@ -24,7 +24,6 @@ define([
 				values = me.serializeObject(),
 				noerror = true,
 				myself = this;
-
 			//check for all errors
 			me.find('.error').removeClass('error');
 
@@ -70,6 +69,9 @@ define([
 								TP.UI.setTitle('Sign Up Complete');
 							}
 							$('.btn.signup').removeAttr('disabled');
+							if(document.getElementById('pkey')){
+								TP.pageLoad('home')
+							}
 						}
 					}
 				});
