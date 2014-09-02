@@ -37,11 +37,12 @@ define([
 					noerror = false;
 				}
 			});
-			//if(this.validateEmail(values.email)!==true && values.email.length>0){
-			//	TP.UI.Dialog('Email Address', 'Please enter a valid email address');
-			//	$('input[name=email]').parent().addClass('error');
-			//	noerror = false;
-			//}
+
+			if(this.validateEmail(values.email)!==true && values.email.length>0){
+				TP.UI.Dialog('Email Address', 'Please enter a valid email address');
+				$('input[name=email]').parent().addClass('error');
+				noerror = false;
+			}
 
 			if(noerror){
 				TP.UI.spinner.showme();

@@ -50,8 +50,12 @@ define([
 						}
 					},
 					success: function (data) {
-						TP.login.buildLocalStorage(data);
-						TP.login.doLogin.success(data);
+						if(data.confirmed==0) {
+							TP.UI.message.showMessage('Your approval is still pending, please wait until an admin has approved your account.', 'notice');
+						}else {
+							TP.login.buildLocalStorage(data);
+							TP.login.doLogin.success(data);
+						}
 					}
 				});
 				return false;
