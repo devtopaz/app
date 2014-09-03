@@ -106,7 +106,7 @@ define([
 						title: 'Use of PPE',
 						state: false,
 						details: {
-							'Word head safety equipment correctly': false,
+							'Wore head safety equipment correctly': false,
 							'Protected eyes and face correctly': false,
 							'Protected ears correctly': false,
 							'Wore appropriate breathing protecting kit': false,
@@ -136,7 +136,7 @@ define([
 							'Person used inadequate procedures': false,
 							'Person did not know / understand correct procedures': false,
 							'Person did not follow procedures': false,
-							'Orderly standard were not being met': false,
+							'Orderly standards were not being met': false,
 							'Orderly standards were not known / understood': false,
 							'Orderly standards were not followed': false,
 						}
@@ -186,7 +186,7 @@ define([
 						title: 'Use of Tools & Equipment',
 						state: false,
 						details: {
-							'Person used to wrong tools for the job': false,
+							'Person used wrong tools for the job': false,
 							'Person used tools incorrectly': false,
 							'Person used tools in an unsafe condition': false,
 						}
