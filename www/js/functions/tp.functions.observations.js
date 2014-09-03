@@ -79,7 +79,7 @@ define([
 			positive: function() {
 				return {
 					procedures: {
-						title: 'User of procedures and Standards',
+						title: 'Pricedures and Orderliness',
 						state: false,
 						details: {
 							'Person used adequate procedures': false,
@@ -91,7 +91,7 @@ define([
 						}
 					},
 					preparation: {
-						title: 'Tasks Preparation &amp; Planning',
+						title: 'Reactions of People',
 						state: false,
 						details: {
 							'Adjusted protective equipment safely': false,
@@ -103,7 +103,7 @@ define([
 						}
 					},
 					ppe: {
-						title: 'Use of PPE',
+						title: 'Personal Protective Equipment',
 						state: false,
 						details: {
 							'Wore head safety equipment correctly': false,
@@ -116,7 +116,7 @@ define([
 						}
 					},
 					tools: {
-						title: 'Use of Tools & Equipment',
+						title: 'Tools And Equipment',
 						state: false,
 						details: {
 							'Person used the right tools for the job': false,
@@ -129,7 +129,7 @@ define([
 			negative: function() {
 				return {
 					procedures: {
-						title: 'User of procedures and Standards',
+						title: 'Pricedures and Orderliness',
 						state: false,
 						dbname: false,
 						details: {
@@ -142,7 +142,7 @@ define([
 						}
 					},
 					preparation: {
-						title: 'Tasks Preparation &amp; Planning',
+						title: 'Reactions of People',
 						state: false,
 						details: {
 							'Failed to adjust protective equipment safely': false,
@@ -154,7 +154,7 @@ define([
 						}
 					},
 					lineoffire: {
-						title: "'Line of Fire' - Position of Personnel",
+						title: "Position of Personnel",
 						state: false,
 						details: {
 							'Person struck an object': false,
@@ -170,7 +170,7 @@ define([
 						}
 					},
 					ppe: {
-						title: 'Use of PPE',
+						title: 'Personal Protective Equipment',
 						state: false,
 						details: {
 							'Did not wear head safety equipment correctly': false,
@@ -183,7 +183,7 @@ define([
 						}
 					},
 					tools: {
-						title: 'Use of Tools & Equipment',
+						title: 'Tools And Equipment',
 						state: false,
 						details: {
 							'Person used wrong tools for the job': false,
