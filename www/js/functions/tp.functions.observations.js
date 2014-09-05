@@ -79,7 +79,7 @@ define([
 			positive: function() {
 				return {
 					procedures: {
-						title: 'Pricedures and Orderliness',
+						title: 'Procedures and Orderliness',
 						state: false,
 						details: {
 							'Person used adequate procedures': false,
@@ -129,7 +129,7 @@ define([
 			negative: function() {
 				return {
 					procedures: {
-						title: 'Pricedures and Orderliness',
+						title: 'Procedures and Orderliness',
 						state: false,
 						dbname: false,
 						details: {
