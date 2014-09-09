@@ -74,7 +74,7 @@ define([
 								TP.login.buildLocalStorage(values);
 							}
 							if($('.signup').html() !== "Done") {
-								myself.$el.html(myself.checkmail({email: values.email}));
+								myself.$el.html(myself.checkmail({email: values.email,uname: data.uname,previous: data.previous}));
 								TP.UI.setTitle('Sign Up Complete');
 							}
 							$('.btn.signup').removeAttr('disabled');
