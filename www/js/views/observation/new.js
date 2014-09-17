@@ -7,7 +7,15 @@ define([
 		el: 'page',
 		events: {
 			'click .newBtn a': 'openType',
+			'change #vesselselector': 'selectRegion',
 			'change #vessel': 'changeItem',
+		},
+		selectRegion: function(el){
+			var vessel = $('#vessel')
+			TP.VESSELS[$(el.currentTarget).val()].forEach(function(info){
+				vessel.append('<option value="'+info+'">'+info+'</opion>');
+			});
+			vessel.removeClass('hide');
 		},
 		changeItem: function(el){
 			TP.DEFAULTS.vessel = $(el.currentTarget).val();

@@ -57,7 +57,6 @@ define([
 					data: values,
 					error: function (data) {
 						$('.btn.signup').removeAttr('disabled');
-						TP.UI.spinner.hideme();
 						TP.UI.message.showMessage('Opps, sorry! The registration failed. Please try again?!... - ' + data.bad, 'bad');
 					},
 					success: function (data) {
@@ -67,20 +66,33 @@ define([
 							TP.UI.message.showMessage(data.error, 'bad');
 							$('.btn.signup').removeAttr('disabled');
 						} else {
-							TP.UI.spinner.hideme();
 							TP.UI.message.showMessage(data.good);
+							TP.UI.spinner.showme();
 							if(data.good==="Details have been saved"){
 								//readd things to localStorage
 								TP.login.buildLocalStorage(values);
 							}
 							if($('.signup').html() !== "Done") {
-								myself.$el.html(myself.checkmail({email: values.email,uname: data.uname,previous: data.previous}));
-								TP.UI.setTitle('Sign Up Complete');
+								//force login for user
+								if (data.good==="Thank you, you have been auto logged in.") {
+									TP.login.doLogin.doAjax({
+										'email': data.uname,
+										'pword': values.pw
+									});
+								}else {
+									myself.$el.html(myself.checkmail({
+										email: values.email,
+										uname: data.uname,
+										previous: data.previous
+									}));
+									TP.UI.setTitle('Sign Up Complete');
+								}
 							}
 							$('.btn.signup').removeAttr('disabled');
 							if(document.getElementById('pkey')){
 								TP.pageLoad('home')
 							}
+							TP.UI.spinner.hideme();
 						}
 					}
 				});
