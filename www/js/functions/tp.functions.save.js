@@ -71,6 +71,7 @@ define([
 			var data = {
 				type: TP.DEFAULTS.type,
 				comment: TP.DEFAULTS.comment,
+				region: TP.DEFAULTS.region,
 				vessel: TP.DEFAULTS.vessel,
 				time: TP.DEFAULTS.time.toString('u'),
 				user: localStorage.uid,

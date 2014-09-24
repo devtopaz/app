@@ -19,6 +19,7 @@ define([
 				name: null,
 				time: null,
 				comment: null,
+				region: null,
 				vessel: null,
 				edit: false
 			}
@@ -31,6 +32,7 @@ define([
 				type:item.type,
 				time: new Date(item.time),
 				comment: item.comment,
+				region: region.vessel,
 				vessel: item.vessel,
 				edit: true,
 			};
