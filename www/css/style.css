@@ -5442,7 +5442,7 @@ shell content .bottomnavigation a:last-child {
 .header .title {
   width: 100%;
   text-align: center;
-  line-height: 2.7rem;
+  line-height: 2rem;
   font-size: 1.17rem;
   font-family: sansprolight;
   display: inline-block;
