@@ -81,49 +81,49 @@ define([
 			positive: function() {
 				return {
 					procedures: {
-						title: 'Procedures and Orderliness',
+						title: 'Control of Work & Safety Standards',
 						state: false,
 						details: {
-							'Person used adequate procedures': false,
-							'Person did know / understand correct procedures': false,
-							'Person followed procedures correctly': false,
-							'Orderly standards were being met': false,
-							'Orderly standards were known / understood': false,
-							'Orderly standards were being followed': false,
+							'CoW procedures were fully applied before work commenced': false,
+							'The purpose of CoW procedures were fully understood': false,
+							'CoW procedures were successfully applied & closed': false,
+							'Safety Standards & housekeeping were applied before work commenced': false,
+							'The purpose of Safety Standards & housekeeping were fully understood': false,
+							'Safety Standards & housekeeping were followed throughout': false,
 						}
 					},
 					preparation: {
-						title: 'Reactions of People',
+						title: 'Actions to improve Safety',
 						state: false,
 						details: {
-							'Adjusted protective equipment safely': false,
-							'Changed position safely': false,
-							'Rearranged a job safely': false,
 							'Stopped a job safely': false,
-							'Attached grounds safely': false,
-							'Performed Lockouts safely': false,
+							'Adjusted or improved application of control measures': false,
+							'Adjusted working position to improve safety': false,
+							'Rearranged a task or work site to improve safety': false,
+							'Revised CoW procedures & documents following task/environmental change': false,
+							'Re­briefed Work Party following task/environmental change': false,
 						}
 					},
 					ppe: {
-						title: 'Personal Protective Equipment',
+						title: 'Use of PPE',
 						state: false,
 						details: {
 							'Wore head safety equipment correctly': false,
 							'Protected eyes and face correctly': false,
 							'Protected ears correctly': false,
-							'Wore appropriate breathing protecting kit': false,
-							'Protected arm and hands correctly': false,
-							'Wore appropriate body protection kit': false,
-							'Protected legs and feet correctly': false,
+							'Wore appropriate respiratory protection equipment': false,
+							'Protected hands correctly': false,
+							'Wore appropriate fall­prevention equipment': false,
+							'Used appropriate protective footwear': false,
 						}
 					},
 					tools: {
-						title: 'Tools And Equipment',
+						title: 'Use of Tools & Equipment',
 						state: false,
 						details: {
-							'Person used the right tools for the job': false,
-							'Person used tools correctly': false,
-							'Person used tools in a safe condition': false,
+							'Correct tools & equipment were selected for the task': false,
+							'Tools & equipment were used safely throughout': false,
+							'All tools & equipment were in a safe, well­maintained condition': false,
 						}
 					}
 				}
@@ -131,66 +131,62 @@ define([
 			negative: function() {
 				return {
 					procedures: {
-						title: 'Procedures and Orderliness',
+						title: 'Control of Work & Safety Standards',
 						state: false,
 						dbname: false,
 						details: {
-							'Person used inadequate procedures': false,
-							'Person did not know / understand correct procedures': false,
-							'Person did not follow procedures': false,
-							'Orderly standards were not being met': false,
-							'Orderly standards were not known / understood': false,
-							'Orderly standards were not followed': false,
+							'CoW procedures were not applied before work commenced': false,
+							'The purpose of CoW procedures were not fully understood': false,
+							'CoW procedures were not successfully applied or closed': false,
+							'Safety Standards & housekeeping were not applied before work commenced': false,
+							'The purpose of Safety Standards & housekeeping were not fully understood': false,
+							'Safety Standards & housekeeping were not followed throughout': false
 						}
 					},
 					preparation: {
-						title: 'Reactions of People',
+						title: 'Actions affecting Safety',
 						state: false,
 						details: {
-							'Failed to adjust protective equipment safely': false,
-							'Failed to change position safely': false,
-							'Failed to rearrange a job safely': false,
 							'Failed to stop a job safely': false,
-							'Failed to attach grounds safely': false,
-							'Failed to perform Localouts safely': false,
+							'Ineffective or incorrect application of control measures': false,
+							'Working position was unsafe': false,
+							'Task or work site was not arranged safely': false,
+							'Failed to revised CoW procedures & documents following task/environmental change': false,
+							'Failed to re­brief Work Party following task/environmental change': false
 						}
 					},
 					lineoffire: {
-						title: "Position of Personnel",
+						title: "Actions affecting Safety",
 						state: false,
 						details: {
-							'Person struck an object': false,
-							'Person was struck by an object': false,
-							'Person was caught in / on / between objects': false,
-							'Person fell': false,
-							'Person contacted extreme temperatures': false,
-							'Person contacted electric current': false,
-							'Person was exposed to a hazardous substance': false,
-							'Person over-exerted': false,
-							'Person suffered injury due to repetitive motion': false,
-							'Person suffered injury due to awkward position / static posture': false,
+							'Failed to stop a job safely': false,
+							'Ineffective or incorrect application of control measures': false,
+							'Working position was unsafe': false,
+							'Task or work site was not arranged safely': false,
+							'Failed to revised CoW procedures & documents following task/environmental change': false,
+							'Failed to re­brief Work Party following task/environmental change': false,
 						}
 					},
 					ppe: {
-						title: 'Personal Protective Equipment',
+						title: 'Use of PPE',
 						state: false,
 						details: {
 							'Did not wear head safety equipment correctly': false,
 							'Did not protect eyes and face correctly': false,
 							'Did not protect ears correctly': false,
-							'Did not wear appropriate breathing protecting kit': false,
-							'Did not protect arm and hands correctly': false,
-							'Did not wear appropriate body protection kit': false,
-							'Did not protect legs and feet correctly': false,
+							'Did not wear appropriate respiratory protection equipment': false,
+							'Did not protected hands correctly': false,
+							'Did not wear appropriate fall­prevention equipment': false,
+							'Did not use appropriate protective footwear': false,
 						}
 					},
 					tools: {
-						title: 'Tools And Equipment',
+						title: 'Use of Tools & Equipment',
 						state: false,
 						details: {
-							'Person used wrong tools for the job': false,
-							'Person used tools incorrectly': false,
-							'Person used tools in an unsafe condition': false,
+							'Incorrect or insufficient tools & equipment were selected for the task': false,
+							'Tools & equipment were not used safely': false,
+							'Tools & equipment were not in a safe or well­maintained condition': false,
 						}
 					}
 				}
