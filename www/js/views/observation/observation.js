@@ -17,7 +17,6 @@ define([
 				    var itemList = item.details[him];
 				    if(itemList === true) {
 					    checker = false;
-					    c(itemList);
 				    }
 			    });
 		    });
