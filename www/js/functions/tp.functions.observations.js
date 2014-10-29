@@ -156,15 +156,19 @@ define([
 						}
 					},
 					lineoffire: {
-						title: "Actions affecting Safety",
+						title: "Position of Personnel",
 						state: false,
 						details: {
-							'Failed to stop a job safely': false,
-							'Ineffective or incorrect application of control measures': false,
-							'Working position was unsafe': false,
-							'Task or work site was not arranged safely': false,
-							'Failed to revised CoW procedures & documents following task/environmental change': false,
-							'Failed to re­brief Work Party following task/environmental change': false,
+							'Person struck an object': false,
+							'Person was struck by an object': false,
+							'Person was caught in / on / between objects': false,
+							'Person fell': false,
+							'Person contacted extreme temperatures': false,
+							'Person contacted electric current': false,
+							'Person was exposed to a hazardous substance': false,
+							'Person over-exerted': false,
+							'Person suffered injury due to repetitive motion': false,
+							'Person suffered injury due to awkward position / static posture': false,
 						}
 					},
 					ppe: {

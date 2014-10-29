@@ -13,6 +13,7 @@ define([
 		selectRegion: function(el){
 			var vessel = $('#vessel')
 			TP.DEFAULTS.region = $("#vesselselector option:selected" ).text();
+			vessel.empty();
 			TP.VESSELS[$(el.currentTarget).val()].forEach(function(info){
 				vessel.append('<option value="'+info+'">'+info+'</opion>');
 			});
