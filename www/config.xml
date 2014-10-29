@@ -14,7 +14,7 @@
         Topaz Marine Safety App
     </author>
 
-    <preference name="phonegap-version" value="3.5.0" /> <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version" value="3.6.3" /> <!-- all: current version of PhoneGap -->
 
     <!--/////////////////////////////////////////////////
                      Features to be added
