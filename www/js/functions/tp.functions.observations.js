@@ -81,15 +81,15 @@ define([
 			positive: function() {
 				return {
 					procedures: {
-						title: 'Control of Work & Safety Standards',
+						title: 'Control of Work &amp; Safety Standards',
 						state: false,
 						details: {
 							'CoW procedures were fully applied before work commenced': false,
 							'The purpose of CoW procedures were fully understood': false,
-							'CoW procedures were successfully applied & closed': false,
-							'Safety Standards & housekeeping were applied before work commenced': false,
-							'The purpose of Safety Standards & housekeeping were fully understood': false,
-							'Safety Standards & housekeeping were followed throughout': false,
+							'CoW procedures were successfully applied &amp; closed': false,
+							'Safety Standards &amp; housekeeping were applied before work commenced': false,
+							'The purpose of Safety Standards &amp; housekeeping were fully understood': false,
+							'Safety Standards &amp; housekeeping were followed throughout': false,
 						}
 					},
 					preparation: {
@@ -100,7 +100,7 @@ define([
 							'Adjusted or improved application of control measures': false,
 							'Adjusted working position to improve safety': false,
 							'Rearranged a task or work site to improve safety': false,
-							'Revised CoW procedures & documents following task/environmental change': false,
+							'Revised CoW procedures &amp; documents following task/environmental change': false,
 							'Re­briefed Work Party following task/environmental change': false,
 						}
 					},
@@ -118,12 +118,12 @@ define([
 						}
 					},
 					tools: {
-						title: 'Use of Tools & Equipment',
+						title: 'Use of Tools &amp; Equipment',
 						state: false,
 						details: {
-							'Correct tools & equipment were selected for the task': false,
-							'Tools & equipment were used safely throughout': false,
-							'All tools & equipment were in a safe, well­maintained condition': false,
+							'Correct tools &amp; equipment were selected for the task': false,
+							'Tools &amp; equipment were used safely throughout': false,
+							'All tools &amp; equipment were in a safe, well&#8211;maintained condition': false,
 						}
 					}
 				}
@@ -131,16 +131,16 @@ define([
 			negative: function() {
 				return {
 					procedures: {
-						title: 'Control of Work & Safety Standards',
+						title: 'Control of Work &amp; Safety Standards',
 						state: false,
 						dbname: false,
 						details: {
 							'CoW procedures were not applied before work commenced': false,
 							'The purpose of CoW procedures were not fully understood': false,
 							'CoW procedures were not successfully applied or closed': false,
-							'Safety Standards & housekeeping were not applied before work commenced': false,
-							'The purpose of Safety Standards & housekeeping were not fully understood': false,
-							'Safety Standards & housekeeping were not followed throughout': false
+							'Safety Standards &amp; housekeeping were not applied before work commenced': false,
+							'The purpose of Safety Standards &amp; housekeeping were not fully understood': false,
+							'Safety Standards &amp; housekeeping were not followed throughout': false
 						}
 					},
 					preparation: {
@@ -151,7 +151,7 @@ define([
 							'Ineffective or incorrect application of control measures': false,
 							'Working position was unsafe': false,
 							'Task or work site was not arranged safely': false,
-							'Failed to revised CoW procedures & documents following task/environmental change': false,
+							'Failed to revised CoW procedures &amp; documents following task/environmental change': false,
 							'Failed to re­brief Work Party following task/environmental change': false
 						}
 					},
@@ -185,12 +185,12 @@ define([
 						}
 					},
 					tools: {
-						title: 'Use of Tools & Equipment',
+						title: 'Use of Tools &amp; Equipment',
 						state: false,
 						details: {
-							'Incorrect or insufficient tools & equipment were selected for the task': false,
-							'Tools & equipment were not used safely': false,
-							'Tools & equipment were not in a safe or well­maintained condition': false,
+							'Incorrect or insufficient tools &amp; equipment were selected for the task': false,
+							'Tools &amp; equipment were not used safely': false,
+							'Tools &amp; equipment were not in a safe or well&#8211;maintained condition': false,
 						}
 					}
 				}

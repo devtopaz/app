@@ -11,9 +11,11 @@ define([
 			'change #vessel': 'changeItem',
 		},
 		selectRegion: function(el){
-			var vessel = $('#vessel')
+			var vessel = $('#vessel'),
+				vesselStart = $('<option id="vesselstart" value="">Please select a vessel or site</option>');
 			TP.DEFAULTS.region = $("#vesselselector option:selected" ).text();
 			vessel.empty();
+			vessel.append(vesselStart);
 			TP.VESSELS[$(el.currentTarget).val()].forEach(function(info){
 				vessel.append('<option value="'+info+'">'+info+'</opion>');
 			});
@@ -22,6 +24,7 @@ define([
 		changeItem: function(el){
 			TP.DEFAULTS.vessel = $(el.currentTarget).val();
 			$('.new .hide').removeClass('hide');
+			$('#vesselstart').remove();
 			//document.querySelector('page').scrollTop = 300;
 			$('page').animate({
 				scrollTop: 300
