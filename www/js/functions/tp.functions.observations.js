@@ -32,7 +32,7 @@ define([
 				type:item.type,
 				time: new Date(item.time),
 				comment: item.comment,
-				region: region.vessel,
+				region: item.region,
 				vessel: item.vessel,
 				edit: true,
 			};
