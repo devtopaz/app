@@ -16,3 +16,4 @@ out
 platforms
 /plugins/*
 www/img/Thumbs.db
+*.xcworkspacedata
