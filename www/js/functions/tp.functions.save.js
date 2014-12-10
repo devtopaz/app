@@ -15,7 +15,7 @@ define([
 			if(localStorage.pending){
 				var tempStorage = JSON.parse(localStorage.pending);
 				//remove item
-				delete tempStorage[TP.DEFAULTS.time.toString('u')];
+				delete tempStorage[TP.DEFAULTS.time.toString('u').replace(' ', 'T')];
 				if(Object.keys(tempStorage).length===0){
 					localStorage.removeItem('pending');
 				}else{
