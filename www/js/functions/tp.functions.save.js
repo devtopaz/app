@@ -33,7 +33,9 @@ define([
 			if(typeof tempStorage === "object"){
 				tmpObject = tempStorage;
 			}
-
+			//make sure the date is safe for older browsers
+			data.time = data.time.replace(' ', 'T');
+			
 			//write to an object if we do more than one observation without internet
 			tmpObject[data.time] = data;
 			localStorage.setItem('pending',JSON.stringify(tmpObject));
