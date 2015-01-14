@@ -14,7 +14,7 @@
         Topaz Marine Safety App
     </author>
 
-    <preference name="phonegap-version" value="3.6.3" /> <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version" value="4.0.0" /> <!-- all: current version of PhoneGap -->
 
     <!--/////////////////////////////////////////////////
                      Features to be added
@@ -78,7 +78,7 @@
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog" version="0.2.1" />
+    <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog"/>
 
     <!--Off-->
     <!--
