@@ -67,6 +67,7 @@ Globals
 			'DMS Courageous',
 			'DMS Fortune',
 			'TEAM Muscat',
+			'TOPAZ Addax',
 			'TOPAZ Jaddaf',
 			'TOPAZ Jafiliya',
 			'TOPAZ Jebel Ali',
@@ -86,7 +87,6 @@ Globals
 			'Doha Workshop / Stores',
 		],
 		Global: [
-			'TOPAZ Addax',
 			'TOPAZ Amani',
 			'TOPAZ Captain',
 			'TOPAZ Commander',
