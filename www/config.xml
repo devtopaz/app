@@ -3,14 +3,15 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.topazworld"
+        id        = "safety.topazobservation"
         version   = "1.0.0">
-
+    <!--id        = "com.topazworld"-->
+    <!--id        = "safety.topazobservation"-->
     <name>Topaz Marine Observation App</name>
 
     <description>Safety observation app for Topaz Marine staff only.</description>
 
-    <author email="support@http://topazworld.com/" href="http://www.topazworld.com/">
+    <author email="topazmarinesafetyapp@gmail.com" href="http://www.topazworld.com/">
         Topaz Marine Observation App
     </author>
 
